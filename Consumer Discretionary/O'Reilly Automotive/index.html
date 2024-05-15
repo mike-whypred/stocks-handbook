@@ -1,0 +1,3323 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../MercadoLibre/">
+      
+      
+        <link rel="next" href="../PDD%20Holdings/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+    
+    
+      
+        <title>O'Reilly Automotive - StockBook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+
+<script defer src="https://openai-widget.web.app/ChatComponent.bundle.js"></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="dark" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-what-is-oreilly-automotive" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="StockBook" class="md-header__button md-logo" aria-label="StockBook" data-md-component="logo">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            StockBook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              O'Reilly Automotive
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="dark" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="StockBook" class="md-nav__button md-logo" aria-label="StockBook" data-md-component="logo">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    StockBook
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to StockBook
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Communication Services
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Communication Services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Charter%20Communications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Charter Communications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Comcast/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comcast
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Electronic%20Arts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electronic Arts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Google/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Google
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Meta/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Netflix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Netflix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Sirius%20XM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sirius XM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/T-Mobile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    T Mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Take-Two%20Interactive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Take Two Interactive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Warner%20Bros/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Warner Bros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Consumer Discretionary
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Consumer Discretionary
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Airbnb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Airbnb
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Amazon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Amazon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Book%20Holdings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Book Holdings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DoorDash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DoorDash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lululemon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lululemon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marriott%20International/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marriott International
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MercadoLibre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MercadoLibre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    O'Reilly Automotive
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    O'Reilly Automotive
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-oreilly-automotive" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is O'Reilly Automotive?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-why-is-oreilly-automotive-significant-in-the-automotive-industry" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Why is O'Reilly Automotive Significant in the Automotive Industry?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-how-does-oreilly-automotive-operate-and-expand-its-business" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. How does O'Reilly Automotive Operate and Expand its Business?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-who-are-the-key-competitors-and-market-trends-in-the-automotive-retail-sector" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Who are the Key Competitors and Market Trends in the Automotive Retail Sector?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-what-are-the-challenges-and-opportunities-for-oreilly-automotive" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. What are the Challenges and Opportunities for O'Reilly Automotive?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PDD%20Holdings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PDD Holdings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ross%20Stores/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ross Stores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Starbucks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Starbucks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tesla/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tesla
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Consumer Staples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Consumer Staples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Coca-Cola%20Europacific%20Partners/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coca Cola Europacific Partners
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Costco/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Costco
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Dollar%20Tree/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dollar Tree
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Keurig%20Dr%20Pepper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Keurig Dr Pepper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Kraft%20Heinz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kraft Heinz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Mondel%C4%93z%20International/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mondelēz International
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Monster%20Beverage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Monster Beverage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/PepsiCo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PepsiCo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Walgreens%20Boots%20Alliance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Walgreens Boots Alliance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Energy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Energy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Energy/Baker%20Hughes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Baker Hughes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Energy/Diamondback%20Energy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diamondback Energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Financials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Financials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Financials/PayPal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PayPal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Health Care
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Health Care
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Amgen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Amgen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/AstraZeneca/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AstraZeneca
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Biogen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Biogen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/DexCom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DexCom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/GE%20HealthCare/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GE HealthCare
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Gilead%20Sciences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gilead Sciences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Idexx%20Laboratories/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Idexx Laboratories
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Illumina/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Illumina
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Intuitive%20Surgical/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intuitive Surgical
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Moderna/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Moderna
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Regeneron/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regeneron
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Vertex%20Pharmaceuticals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vertex Pharmaceuticals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Industrials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Industrials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/ADP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ADP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/CSX/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Cintas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cintas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Copart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Copart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Fastenal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fastenal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Honeywell/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Honeywell
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Old%20Dominion%20Freight%20Line/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Old Dominion Freight Line
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Paccar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paccar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Paychex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paychex
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Verisk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verisk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Information Technology
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Information Technology
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/AMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/ASML%20Holding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ASML Holding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Adobe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adobe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Analog%20Devices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analog Devices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Ansys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ansys
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Apple%20Inc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apple Inc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Applied%20Materials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applied Materials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Atlassian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atlassian
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Autodesk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Autodesk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Broadcom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Broadcom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/CDW%20Corporation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CDW Corporation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Cadence%20Design%20Systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cadence Design Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Cisco/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cisco
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Cognizant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cognizant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Crowdstrike/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crowdstrike
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Datadog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Datadog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Fortinet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fortinet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/GlobalFoundries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GlobalFoundries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Intel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Intuit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intuit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/KLA%20Corporation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KLA Corporation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Lam%20Research/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lam Research
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Marvell%20Technology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marvell Technology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Microchip%20Technology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microchip Technology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Micron%20Technology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Micron Technology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Microsoft/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microsoft
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/MongoDB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MongoDB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/NXP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NXP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Nvidia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nvidia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Onsemi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Onsemi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Palo%20Alto%20Networks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Palo Alto Networks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Qualcomm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Qualcomm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Roper%20Technologies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roper Technologies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Synopsys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Synopsys
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Texas%20Instruments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Texas Instruments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Workday%20Inc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workday Inc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Zscaler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zscaler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Materials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Materials/Linde/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linde
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Real Estate
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Real Estate
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Real%20Estate/CoStar%20Group/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CoStar Group
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Utilities
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Utilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Utilities/American%20Electric%20Power/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    American Electric Power
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Utilities/Constellation%20Energy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Constellation Energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Utilities/Exelon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exelon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Utilities/Xcel%20Energy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Xcel Energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-oreilly-automotive" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is O'Reilly Automotive?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-why-is-oreilly-automotive-significant-in-the-automotive-industry" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Why is O'Reilly Automotive Significant in the Automotive Industry?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-how-does-oreilly-automotive-operate-and-expand-its-business" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. How does O'Reilly Automotive Operate and Expand its Business?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-who-are-the-key-competitors-and-market-trends-in-the-automotive-retail-sector" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Who are the Key Competitors and Market Trends in the Automotive Retail Sector?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-what-are-the-challenges-and-opportunities-for-oreilly-automotive" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. What are the Challenges and Opportunities for O'Reilly Automotive?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+                  
+
+
+  <h1>O'Reilly Automotive</h1>
+
+<h2 id="1-what-is-oreilly-automotive">1. What is O'Reilly Automotive?</h2>
+<h4 id="11-what-is-the-history-of-oreilly-automotive">1.1 What is the History of O'Reilly Automotive?</h4>
+<p>The history of O'Reilly Automotive, Inc. dates back to 1849 when Michael Byrne O'Reilly immigrated to America from Ireland. He settled in St. Louis and worked his way through school to earn a law degree, then pursued a career as a title examiner. His son, Charles Francis O'Reilly, attended college in St. Louis and went to work in 1914 as a traveling salesman for Fred Campbell Auto Supply in St. Louis.</p>
+<p>By 1924, Charles had become familiar with the Springfield area, having traveled by train to sell auto parts throughout the territory. He recognized the region as an area of growth and opportunity and asked to be transferred there. By 1932, he had become manager of Link Motor Supply in Springfield, and one of his sons, Charles H. (Chub) O'Reilly, joined the company. Together they helped make Link Motor Supply the predominant auto parts store in the area.</p>
+<p>In 1957, Link planned a reorganization, which included the retirement of 72-year-old Charles F. O'Reilly, and the transfer of Chub O'Reilly to Kansas City. The two made the decision to form their own company, O'Reilly Automotive, Inc. They opened for business in Springfield, Missouri on December 2, 1957, with one store and 13 employees. Their sales totaled $700,000 in 1958—their first full year of business.</p>
+<p>By 1961, the company's volume had reached $1.3 million in combined sales volume of O'Reilly Automotive and their Ozark Automotive Distributors, a division formed to serve independent automotive jobbers in the area. In March 1975, annual sales volume rose to $7 million and a 52,000 square-foot facility was built for the O'Reilly/Ozark warehouse operation. By that time, the company had nine stores, all located in southwestern Missouri.</p>
+<p>The company continued to grow and expand, and in 1993, it completed an initial public stock offering, trading on the NASDAQ market under the symbol ORLY. Today, O'Reilly Automotive, Inc. operates more than 6,131 stores in 48 U.S. states, Puerto Rico, Mexico, and Canada, and is the dominant auto parts retailer in all of its market areas.</p>
+<p>Throughout its history, O'Reilly Automotive, Inc. has been committed to its core values of honesty, integrity, and hard work, and has been recognized for its commitment to its employees, customers, and the communities it serves.</p>
+<h4 id="12-what-products-and-services-does-oreilly-automotive-offer">1.2 What Products and Services does O'Reilly Automotive Offer?</h4>
+<p>O'Reilly Auto Parts offers a wide range of products and services, including:</p>
+<p><strong>Products:</strong></p>
+<ul>
+<li>Auto parts and accessories</li>
+<li>Tools and equipment</li>
+<li>Supplies and equipment for collision repair and body shop professionals</li>
+<li>Custom paint mixing and auto body equipment</li>
+<li>Hydraulic hoses and fittings</li>
+<li>Fluids and lubricants</li>
+<li>Batteries and battery accessories</li>
+<li>Air and fuel filters</li>
+<li>Belts and hoses</li>
+<li>Brake pads and rotors</li>
+<li>Suspension and steering components</li>
+<li>Electrical and lighting components</li>
+<li>Interior and exterior trim and accessories</li>
+<li>And many more!</li>
+</ul>
+<p><strong>Services:</strong></p>
+<ul>
+<li>Loaner Tool Program: O'Reilly Auto Parts offers a loaner tool program that allows customers to borrow tools for a small deposit, which is fully refundable when the tool is returned.</li>
+<li>Custom Paint Mixing: O'Reilly Auto Parts has a large inventory of custom paint mixing products and can mix paint to match any color.</li>
+<li>Check Engine Light Testing: O'Reilly Auto Parts offers free check engine light testing and can provide customers with a printout of the trouble code.</li>
+<li>Custom-Built Hydraulic Hoses: O'Reilly Auto Parts can custom-build hydraulic hoses to fit specific applications.</li>
+<li>Fluid &amp; Battery Recycling: O'Reilly Auto Parts collects used motor oil, automotive batteries, transmission fluid, gear oil, and oil filters for recycling, and offers a $10 O'Reilly Gift Card for any unbroken automotive battery.</li>
+<li>Drum &amp; Rotor Resurfacing: O'Reilly Auto Parts can resurface vehicle drums and rotors if they measure within specs and aren't showing signs of extreme wear.</li>
+</ul>
+<p><strong>Other Services:</strong></p>
+<ul>
+<li>
+<p>O'Reilly Auto Parts also offers a range of other services, including:</p>
+</li>
+<li>
+<p>Free next-day delivery on online orders</p>
+</li>
+<li>Online ordering and in-store pickup</li>
+<li>In-store services, such as battery testing and charging, and fluid exchange</li>
+<li>Professional parts people available to help with repairs and maintenance</li>
+<li>A wide range of brands and products available online and in-store</li>
+</ul>
+<p>Overall, O'Reilly Auto Parts offers a wide range of products and services to help customers with their automotive needs.</p>
+<h4 id="13-what-is-the-market-presence-of-oreilly-automotive">1.3 What is the Market Presence of O'Reilly Automotive?</h4>
+<p>The market presence of O'Reilly Automotive is strong, with a market capitalization of $59.79 billion as of 2023. The company is one of the largest specialty retailers of automotive aftermarket parts, tools, supplies, equipment, and accessories in the United States, serving both professional service providers and do-it-yourself customers.</p>
+<p>O'Reilly's market presence is driven by its robust dual market strategy, which caters to both DIY and professional service provider customers. The company's commitment to superior customer service, including technically proficient store personnel and a strategic distribution network, ensures high customer satisfaction and repeat business.</p>
+<p>O'Reilly's market presence is also strengthened by its extensive network of stores and online presence, which provides customers with convenient access to a wide range of automotive products. The company's ability to deliver hard-to-find parts quickly is a significant strength that enhances customer loyalty and repeat business.</p>
+<p>However, O'Reilly's market presence is not without its weaknesses. The company's high dependence on a fragmented professional service provider market makes it vulnerable to changes in the market and competition. Additionally, the company's reliance on a few large suppliers increases its risk exposure to supply chain disruptions.</p>
+<p>Overall, O'Reilly Automotive's market presence is strong, driven by its dual market strategy, customer service, and extensive network of stores and online presence. However, the company's dependence on a fragmented professional service provider market and reliance on a few large suppliers present potential risks and challenges.</p>
+<h2 id="2-why-is-oreilly-automotive-significant-in-the-automotive-industry">2. Why is O'Reilly Automotive Significant in the Automotive Industry?</h2>
+<h4 id="21-how-does-oreilly-automotive-contribute-to-the-automotive-aftermarket">2.1 How does O'Reilly Automotive Contribute to the Automotive Aftermarket?</h4>
+<p>O'Reilly Automotive contributes to the automotive aftermarket industry in several ways:</p>
+<ol>
+<li><strong>Dual-Market Business Strategy</strong>: O'Reilly develops a dual-market business strategy, enabling the company to maximize sales in both the professional "do-it-for-me" business and the retail "do-it-yourself" business.</li>
+<li><strong>Extensive Store and Distribution Network</strong>: O'Reilly operates 5,784 stores totaling 43.2 million square feet with approximately 21,000 stock keeping units (SKUs), providing customers with convenience, a wide selection of inventory, and expert customer service.</li>
+<li><strong>Strong Customer Service</strong>: O'Reilly focuses on providing excellent customer service, which has helped the company to build a loyal customer base and drive repeat business.</li>
+<li><strong>Competitive Advantage</strong>: O'Reilly's extensive store and distribution network, combined with its strong customer service, provides a competitive advantage in the market.</li>
+<li><strong>Market Share Growth</strong>: O'Reilly has been aggressively pursuing additional market share gains by lowering prices to its professional customers and opening new stores.</li>
+<li><strong>Long-Term Demand for Automobiles and Parts</strong>: O'Reilly is well-positioned to benefit from the long-term demand for automobiles and the parts needed to maintain them.</li>
+<li><strong>Industry-Leading ROIC</strong>: O'Reilly has improved its return on invested capital (ROIC) year-over-year in each of the past 12 years, demonstrating the company's ability to generate strong returns for its shareholders.</li>
+<li><strong>Community Involvement</strong>: O'Reilly is committed to giving back to the community, supporting various causes such as homelessness, at-risk children, cancer research, and more.</li>
+<li><strong>Foundation for Growth</strong>: O'Reilly's strong foundation, including its culture, values, and business ethics, provides a solid base for future growth and success.</li>
+<li><strong>Leadership in the Industry</strong>: O'Reilly aims to be the dominant supplier of auto parts in its market areas, offering customers the best combination of price and quality provided with the highest possible service level.</li>
+</ol>
+<p>Overall, O'Reilly Automotive's contributions to the automotive aftermarket industry include its commitment to customer service, competitive advantage, market share growth, long-term demand for automobiles and parts, industry-leading ROIC, community involvement, foundation for growth, and leadership in the industry.</p>
+<h4 id="22-what-are-the-competitive-advantages-of-oreilly-automotive">2.2 What are the Competitive Advantages of O'Reilly Automotive?</h4>
+<p>The competitive advantages of O'Reilly Automotive (ORLY) include:</p>
+<ol>
+<li><strong>Proven ability to execute a dual market strategy</strong>: O'Reilly's ability to effectively serve both do-it-yourself (DIY) and professional service provider customers is a unique competitive advantage.</li>
+<li><strong>Superior customer service</strong>: O'Reilly seeks to provide an efficient and pleasant in-store experience by maintaining attractive stores with a wide selection of automotive products.</li>
+<li><strong>Technically proficient store personnel</strong>: O'Reilly's store personnel are trained to provide expert advice and assistance to customers, which helps to build customer loyalty and trust.</li>
+<li><strong>Strategic distribution network</strong>: O'Reilly's 28 distribution centers and 375 hub stores across the country enable efficient delivery of parts to its stores, which is particularly important for professional customers who require fast and cost-efficient delivery.</li>
+<li><strong>Experienced management team</strong>: O'Reilly's management team has a deep understanding of the automotive aftermarket industry and has successfully executed its growth strategy over the years.</li>
+<li><strong>Strong brand recognition</strong>: O'Reilly has a strong brand reputation and is widely recognized as a trusted and reliable source for automotive parts and services.</li>
+<li><strong>Ability to operate in less densely populated areas</strong>: O'Reilly's ability to operate in less densely populated areas, which would not otherwise support a national chain store, is a competitive advantage that allows it to expand its market presence.</li>
+<li><strong>Growth strategies</strong>: O'Reilly's growth strategies, including the expansion of its online presence, the introduction of new products and services, and the acquisition of new stores, are designed to drive growth and increase market share.</li>
+</ol>
+<p>These competitive advantages have enabled O'Reilly to maintain its market leadership position and achieve consistent profitability over the years.</p>
+<h4 id="23-how-does-oreilly-automotive-impact-the-retail-automotive-sector">2.3 How does O'Reilly Automotive Impact the Retail Automotive Sector?</h4>
+<p>O'Reilly Automotive has a significant impact on the retail automotive sector through its dual-market business strategy, which enables the company to maximize sales in both the professional "do-it-for-me" business and the retail "do-it-yourself" business. Here are some ways O'Reilly Automotive impacts the retail automotive sector:</p>
+<ol>
+<li><strong>Market Expansion</strong>: O'Reilly Automotive's consistent store openings and expansion into new markets present significant opportunities for growth. The company's ability to cater to diverse customer needs across different regions can drive sales and increase market share.</li>
+<li><strong>Omnichannel Retail Strategy</strong>: O'Reilly's focus on Omnichannel initiatives, which integrate in-store and online shopping experiences, positions the company to capitalize on evolving consumer behaviors and enhance customer engagement.</li>
+<li><strong>Competitive Advantage</strong>: O'Reilly's effective dual-market strategy, superior customer service, technically proficient store personnel, strategic distribution network, and experienced management team make up its key competitive advantages, which cannot be easily duplicated.</li>
+<li><strong>Growth through Acquisitions</strong>: O'Reilly has a history of strategic acquisitions, which has enabled the company to expand its market share and increase its presence in new regions.</li>
+<li><strong>Influence on Industry Trends</strong>: O'Reilly's performance and strategies have an impact on industry trends, such as the growth of the DIY market and the increasing importance of online shopping.</li>
+<li><strong>Impact on Suppliers</strong>: O'Reilly's large purchasing power and strategic relationships with suppliers have an impact on the supply chain and the automotive aftermarket industry as a whole.</li>
+<li><strong>Employment and Economic Impact</strong>: O'Reilly's operations and expansion create employment opportunities and contribute to local economies, making it a significant player in the retail automotive sector.</li>
+</ol>
+<p>Overall, O'Reilly Automotive's impact on the retail automotive sector is significant, and the company's strategies and performance have a ripple effect on the industry as a whole.</p>
+<h2 id="3-how-does-oreilly-automotive-operate-and-expand-its-business">3. How does O'Reilly Automotive Operate and Expand its Business?</h2>
+<h4 id="31-what-is-the-business-model-of-oreilly-automotive">3.1 What is the Business Model of O'Reilly Automotive?</h4>
+<p>The business model of O'Reilly Automotive is a specialty retailer and supplier of automotive aftermarket parts, tools, supplies, equipment, and accessories. The company operates a large network of stores across the United States, Mexico, and Canada, offering a wide range of products and services to both do-it-yourself (DIY) and professional service provider customers.</p>
+<p>Here are the key components of O'Reilly's business model:</p>
+<ol>
+<li><strong>Dual Market Strategy</strong>: O'Reilly targets both DIY and professional service provider customers, offering a wide range of products and services to cater to their needs.</li>
+<li><strong>Extensive Product Line</strong>: O'Reilly's stores carry an extensive product line, including new and remanufactured automotive hard parts, maintenance items, and accessories.</li>
+<li><strong>Convenience and Inventory Availability</strong>: O'Reilly aims to win customers through service and inventory availability. The company's extensive store and distribution network ensures that customers have access to a wide range of products and services.</li>
+<li><strong>Expert Customer Service</strong>: O'Reilly's stores offer expert customer service, including battery diagnostic testing, battery, wiper, and bulb replacement, and other services.</li>
+<li><strong>Store and Distribution Network</strong>: O'Reilly operates a large network of stores, with over 5,800 locations across the United States, Mexico, and Canada. The company's distribution centers provide same-day or overnight access to an extensive inventory of hard-to-find parts.</li>
+<li><strong>Growth Strategy</strong>: O'Reilly is aggressively pursuing additional market share gains by lowering prices to its professional customers and opening new stores. The company is also investing in digital technologies to enhance the customer experience and improve operational efficiency.</li>
+<li><strong>Brand Recognition and Reputation</strong>: O'Reilly's brand recognition and reputation are key competitive advantages, with a strong presence in the automotive aftermarket industry.</li>
+</ol>
+<p>Overall, O'Reilly's business model is designed to provide customers with a wide range of products and services, while also leveraging the company's extensive store and distribution network to drive growth and profitability.</p>
+<h4 id="32-how-does-oreilly-automotive-manage-its-supply-chain">3.2 How does O'Reilly Automotive Manage its Supply Chain?</h4>
+<p>O'Reilly Automotive manages its supply chain by:</p>
+<ol>
+<li><strong>Investing in larger distribution centers</strong>: The company is relocating two facilities and building a new site in Virginia to increase capacity and service capabilities. This will enable them to support store growth and increased demand in core markets.</li>
+<li><strong>Building a tiered supply chain model</strong>: O'Reilly has a tiered supply chain model, which includes strategically located distribution centers, hub stores, and smaller stores. This allows them to provide same-day availability to a wide range of SKUs for their customers.</li>
+<li><strong>Enhancing inventory management</strong>: The company has implemented an enterprise inventory management solution to elevate customer service, increase replenishment efficiency, and reduce inventory levels. This has helped them to better analyze inventory data and be more responsive to employees and customers.</li>
+<li><strong>Robust distribution system</strong>: O'Reilly's distribution system provides stores with same-day or overnight access to an extensive inventory of hard-to-find parts. This is achieved through a network of 10 distribution centers and a private fleet of vehicles.</li>
+<li><strong>Focus on next-day delivery</strong>: The company has a next-day delivery promise, which is critical for their Do-It-For-Me customers. They use a combination of private fleet and third-party logistics providers to achieve this.</li>
+<li><strong>Strategic location of distribution centers</strong>: O'Reilly's distribution centers are located in metro areas, which allows them to provide multiple deliveries per day to stores in these areas.</li>
+<li><strong>Investment in technology</strong>: The company has invested in advanced material handling equipment, progressive slotting and picking technology, and robust delivery capabilities to support their distribution model.</li>
+</ol>
+<p>Overall, O'Reilly's supply chain strategy is focused on providing fast and reliable delivery of a wide range of automotive parts to their customers, while also managing inventory levels and costs effectively.</p>
+<h4 id="33-what-is-the-expansion-strategy-of-oreilly-automotive">3.3 What is the Expansion Strategy of O'Reilly Automotive?</h4>
+<p>The Expansion Strategy of O'Reilly Automotive is focused on strategic store openings, market diversification, and omnichannel retail initiatives. The company has been successful in expanding its store count, with a total of 6,157 stores across 48 U.S. states, Puerto Rico, and Mexico as of December 31, 2023. O'Reilly's expansion strategy includes:</p>
+<ol>
+<li>Strategic Store Openings: O'Reilly has been consistently opening new stores, with a total of 186 new stores opened in 2023. This expansion strategy helps the company to increase its market share and reach new customers.</li>
+<li>Market Diversification: O'Reilly has expanded its market reach by entering new markets, including the Canadian automotive aftermarket through the acquisition of Vast Auto.</li>
+<li>Omnichannel Retail Initiatives: O'Reilly is focused on providing a seamless shopping experience to its customers through its omnichannel retail strategy, which includes online sales, in-store pickup options, and mobile apps.</li>
+<li>Cross-Border Synergies: The acquisition of Vast Auto has opened up opportunities for cross-border synergies and supply chain efficiencies, which will help O'Reilly to strengthen its position in North America and explore further international expansion opportunities.</li>
+<li>Technological Advancements: O'Reilly is investing in technology to enhance its customer experience, drive sales, and gain a competitive edge in the evolving retail landscape.</li>
+</ol>
+<p>Overall, O'Reilly's expansion strategy is designed to drive growth, increase market share, and provide a competitive edge in the automotive aftermarket industry.</p>
+<h2 id="4-who-are-the-key-competitors-and-market-trends-in-the-automotive-retail-sector">4. Who are the Key Competitors and Market Trends in the Automotive Retail Sector?</h2>
+<h4 id="41-who-are-the-major-competitors-of-oreilly-automotive">4.1 Who are the Major Competitors of O'Reilly Automotive?</h4>
+<p>Based on the search results, the major competitors of O'Reilly Automotive are:</p>
+<ol>
+<li>AutoZone (AZO)</li>
+<li>Advance Auto Parts (AAP)</li>
+<li>Napa (NAPA)</li>
+<li>Dorman Products (DORM)</li>
+<li>Genuine Parts Company (GPC)</li>
+<li>LKQ Corporation (LKQ)</li>
+</ol>
+<p>These companies are all part of the retail/wholesale sector and are major players in the automotive aftermarket parts market.</p>
+<p>O'Reilly Automotive differentiates itself from its competitors in several ways:</p>
+<ol>
+<li>Wide range of products: O'Reilly Automotive offers a wide range of products, including automotive parts, tools, supplies, equipment, and accessories.</li>
+<li>Strong brand recognition: O'Reilly Automotive has a strong brand recognition and is known for its high-quality products and excellent customer service.</li>
+<li>Large network of stores: O'Reilly Automotive has a large network of stores across the United States, which provides convenience to its customers.</li>
+<li>Online presence: O'Reilly Automotive has a strong online presence, which allows customers to shop online and have their products delivered to their doorstep.</li>
+<li>Competitive pricing: O'Reilly Automotive offers competitive pricing, which makes it an attractive option for customers.</li>
+</ol>
+<p>In terms of valuation and earnings, AutoZone has higher revenue and earnings than O'Reilly Automotive. However, O'Reilly Automotive has a higher probable upside, with a consensus target price of $1,110.07, indicating a potential upside of 6.34%.</p>
+<p>In terms of institutional ownership and insider ownership, 85.0% of O'Reilly Automotive shares are owned by institutional investors, while 92.7% of AutoZone shares are owned by institutional investors. 1.6% of O'Reilly Automotive shares are owned by insiders, while 2.5% of AutoZone shares are owned by insiders.</p>
+<p>Overall, O'Reilly Automotive differentiates itself from its competitors through its wide range of products, strong brand recognition, large network of stores, online presence, and competitive pricing.</p>
+<h4 id="42-what-are-the-market-dynamics-in-the-automotive-retail-sector">4.2 What are the Market Dynamics in the Automotive Retail Sector?</h4>
+<p>The market dynamics in the automotive retail sector are characterized by several key trends and challenges. Some of the main market dynamics include:</p>
+<ol>
+<li><strong>Shift to Omni-Channel Retailing</strong>: The pandemic has accelerated the shift to omni-channel retailing, where customers expect a seamless experience across online and offline channels. Dealerships need to adapt to this new reality by investing in digital platforms and providing a consistent customer experience across all channels.</li>
+<li><strong>Shortage of New and Used Vehicles</strong>: The pandemic has led to a shortage of new and used vehicles, which has given dealerships leverage to maintain traditional retail methods and avoid discounting vehicles.</li>
+<li><strong>Growing Demand for Electric Vehicles</strong>: The demand for electric vehicles (EVs) is growing, and dealerships need to adapt to this trend by increasing their offerings of EVs and providing a seamless customer experience for EV buyers.</li>
+<li><strong>Changing Consumer Expectations</strong>: Consumers are increasingly expecting a more digital, convenient, and personalized buying experience. Dealerships need to prioritize digitalization and provide a consumer-friendly experience to meet these expectations.</li>
+<li><strong>Technological Advancements</strong>: The automotive retail sector is experiencing rapid technological advancements, including innovations in electric vehicles, advanced driver-assistance systems (ADAS), connectivity options, and safety features. Dealerships need to stay up-to-date with these advancements to remain competitive.</li>
+<li><strong>Consolidation and Shifts in Distribution</strong>: The automotive aftermarket is experiencing consolidation and shifts in distribution, with customers increasingly preferring online channels and warehouse clubs. Dealerships need to adapt to these changes by investing in digital platforms and providing a seamless customer experience.</li>
+<li><strong>Growing Importance of Sustainability</strong>: The automotive industry is increasingly focused on sustainability, with manufacturers and suppliers investing in cleaner production processes, renewable energy, and recyclable materials. Dealerships need to prioritize sustainability and provide eco-friendly options to meet customer demands.</li>
+<li><strong>Need for Innovation and Adaptation</strong>: The automotive retail sector is undergoing rapid change, and dealerships need to prioritize innovation and adaptation to remain competitive. This includes investing in technology, training staff, and providing a consumer-friendly experience.</li>
+</ol>
+<p>Overall, the market dynamics in the automotive retail sector are characterized by a need for dealerships to adapt to changing consumer expectations, technological advancements, and shifting market trends.</p>
+<h4 id="43-what-are-the-emerging-trends-in-the-automotive-aftermarket">4.3 What are the Emerging Trends in the Automotive Aftermarket?</h4>
+<p>The emerging trends in the automotive aftermarket include:</p>
+<ol>
+<li>
+<p><strong>Cars getting older, aftermarket stakeholders remain cool about it</strong>: With vehicles being kept longer due to the lack of new car supply and economic concerns, the rates of car parc scrappage are falling, leading to a rise in the number of vehicles in operation (VIO) and a shift towards the 6-13-year-old vehicle segment, which is expected to be a prime aftermarket customer.</p>
+</li>
+<li>
+<p><strong>Mileage has returned but is different</strong>: Annual miles traveled has returned and exceeded prior pandemic totals, but the composition of the miles traveled has changed, with rush hours not returning to pre-pandemic levels in all locales and congestion throughout the day showing a slight uptick.</p>
+</li>
+<li>
+<p><strong>Digitization of the workshop as connectivity rises</strong>: With vehicle connectivity now enabled with longer serviceable connections, it is expected that one-third of the VIO will be connected by 2025, leading to new opportunities for aftermarket maintenance and repair.</p>
+</li>
+<li>
+<p><strong>Electric vehicle adoption increases worldwide</strong>: The worldwide shift to electric vehicles (EVs) is expected to continue, with EV sales growing from less than 1% of total vehicle sales a decade ago to more than 4% today, and expected to account for 10% of all new car sales by 2025 and 58% by 2040.</p>
+</li>
+<li>
+<p><strong>Autonomous vehicles and ADAS</strong>: The development of autonomous vehicles and advanced driver-assistance systems (ADAS) is expected to continue, with the use of artificial intelligence, machine learning, and computer vision to improve safety and efficiency.</p>
+</li>
+<li>
+<p><strong>Blockchain technology</strong>: The use of blockchain technology is expected to increase in the automotive industry, providing secure and reliable data sharing and connectivity networks, verifying the supply chain of spare parts, and ensuring that only legitimate and trusted sources are utilized for raw materials and spares.</p>
+</li>
+<li>
+<p><strong>Online retail</strong>: The rise of online retail is expected to continue, with car manufacturers and dealerships offering online booking and purchasing options, and online marketplaces offering a wide range of automotive products, including spare parts, accessories, and entire vehicles.</p>
+</li>
+<li>
+<p><strong>Artificial intelligence and machine learning</strong>: The use of artificial intelligence and machine learning is expected to continue to improve the efficiency and effectiveness of automotive operations, including predictive maintenance, supply chain management, and customer service.</p>
+</li>
+<li>
+<p><strong>Internet of Things (IoT)</strong>: The use of IoT technology is expected to continue to grow, enabling the connection of vehicles, infrastructure, and devices, and providing real-time data and insights to improve safety, efficiency, and customer experience.</p>
+</li>
+<li>
+<p><strong>Sustainability and eco-friendliness</strong>: The automotive industry is expected to continue to focus on sustainability and eco-friendliness, with manufacturers investing in green technologies, such as biofuels and hydrogen fuel cells, to reduce their carbon footprint and meet increasingly stringent emissions regulations.</p>
+</li>
+</ol>
+<h2 id="5-what-are-the-challenges-and-opportunities-for-oreilly-automotive">5. What are the Challenges and Opportunities for O'Reilly Automotive?</h2>
+<h4 id="51-what-are-the-regulatory-challenges-in-the-automotive-retail-industry">5.1 What are the Regulatory Challenges in the Automotive Retail Industry?</h4>
+<p>The regulatory challenges in the automotive retail industry include:</p>
+<ol>
+<li><strong>Homologation</strong>: Meeting multiple standards and regulations around safety, emissions, and other local requirements, which vary greatly from country to country.</li>
+<li><strong>Consumer Duty</strong>: Ensuring compliance with the Financial Conduct Authority's (FCA) new Consumer Duty regulation, which sets a higher standard of care for financial products, such as automotive finance and insurance.</li>
+<li><strong>Product liability</strong>: Dealerships can be held liable for any injuries or damages resulting from defective vehicles they sell, including defects in design, manufacture, or assembly.</li>
+<li><strong>Advertising</strong>: Ensuring that advertising is truthful and not misleading, and that false or exaggerated claims about the safety or performance of vehicles are not made.</li>
+<li><strong>Consumer protection laws</strong>: Compliance with laws that prohibit unfair or deceptive practices, require specific and conspicuous disclosures, and provide consumers with certain rights and remedies.</li>
+<li><strong>Warranty</strong>: Honoring any promises made on the vehicles sold, ensuring that consumers can have any covered repairs or services performed promptly and effectively.</li>
+<li><strong>Price and value</strong>: Providing consumers with fair and transparent pricing information, ensuring that prices are fair and reasonable, and that vehicles provide consumers with fair value.</li>
+<li><strong>Data management</strong>: Managing and processing the growing volumes of operational and product information, and addressing the increasing complexity of data in the automotive industry.</li>
+<li><strong>Master Data Management (MDM)</strong>: Ensuring that product, vehicle, and equipment information is managed accurately and consistently, and that data is standardized and maintained in line with industry standards.</li>
+<li><strong>Regulatory compliance</strong>: Ensuring compliance with regulatory requirements, such as those related to emissions, safety, and environmental impact, which can be complex and constantly changing.</li>
+</ol>
+<p>These regulatory challenges can have significant impacts on the automotive retail industry, including delays and rework, costly fines and penalties, damage to reputation, and loss of customer trust.</p>
+<h4 id="52-what-technological-advancements-impact-oreilly-automotive">5.2 What Technological Advancements Impact O'Reilly Automotive?</h4>
+<p>Technological advancements have a significant impact on O'Reilly Automotive, a leading retailer of automotive parts and accessories. Here are some ways in which technological advancements affect O'Reilly Automotive:</p>
+<ol>
+<li><strong>E-commerce platform</strong>: O'Reilly Automotive has invested heavily in its e-commerce platform, allowing customers to shop online and have products shipped to their doorstep or available for in-store pickup. This has increased customer convenience and loyalty.</li>
+<li><strong>Mobile apps</strong>: O'Reilly Automotive has developed mobile apps that enable customers to browse products, check prices, and make purchases on-the-go. This has increased customer engagement and loyalty.</li>
+<li><strong>Data analytics</strong>: O'Reilly Automotive uses data analytics to better understand customer behavior, preferences, and purchasing habits. This helps the company to optimize its marketing efforts, improve customer service, and increase sales.</li>
+<li><strong>Supply chain optimization</strong>: Technological advancements have enabled O'Reilly Automotive to optimize its supply chain, reducing costs and improving delivery times. This has enabled the company to offer faster and more reliable shipping options to its customers.</li>
+<li><strong>In-store technology</strong>: O'Reilly Automotive has implemented various in-store technologies, such as self-checkout lanes, kiosks, and digital signage, to improve the customer shopping experience and reduce labor costs.</li>
+<li><strong>Artificial intelligence (AI) and machine learning (ML)</strong>: O'Reilly Automotive is exploring the use of AI and ML to improve its customer service, predict customer behavior, and optimize its inventory management.</li>
+<li><strong>Digital marketing</strong>: O'Reilly Automotive uses digital marketing channels, such as social media, email marketing, and search engine optimization (SEO), to reach its target audience and drive sales.</li>
+<li><strong>Online reviews and ratings</strong>: O'Reilly Automotive encourages customers to leave online reviews and ratings, which helps to build trust and credibility with potential customers.</li>
+<li><strong>Partnerships and collaborations</strong>: O'Reilly Automotive partners with other companies to offer exclusive products and services, such as loyalty programs and rewards, to its customers.</li>
+<li><strong>Cybersecurity</strong>: O'Reilly Automotive invests in cybersecurity measures to protect its customers' personal and payment information, ensuring a secure online shopping experience.</li>
+</ol>
+<p>Overall, technological advancements have enabled O'Reilly Automotive to improve its customer experience, increase efficiency, and drive sales growth.</p>
+<h4 id="53-what-growth-opportunities-exist-for-oreilly-automotive">5.3 What Growth Opportunities Exist for O'Reilly Automotive?</h4>
+<p>Based on the search results, the growth opportunities for O'Reilly Automotive include:</p>
+<ol>
+<li><strong>New Store Growth</strong>: O'Reilly has generated 29 consecutive years of same-store-sale growth, and the company continues to expand its physical store network, which exposes the brand to more new customers.</li>
+<li><strong>Market Share Gains</strong>: O'Reilly is aggressively pursuing additional market share gains by lowering prices to its professional customers and opening new stores.</li>
+<li><strong>Same-Store Sales Growth</strong>: O'Reilly's annual same-store sales growth has accelerated each year since 2017, and the company has a good track record of under-promising and over-delivering.</li>
+<li><strong>Strategic Acquisitions</strong>: The acquisition of Vast Auto presents O'Reilly with the opportunity to tap into the Canadian automotive aftermarket, diversifying its geographical presence and customer base.</li>
+<li><strong>Technological Advancements</strong>: O'Reilly is well-positioned to capitalize on technological advancements in the automotive industry and consumer behavior trends, such as omnichannel initiatives and online sales.</li>
+<li><strong>Expansion into New Markets</strong>: O'Reilly has a "gap" in its national footprint, particularly in the Northeast, which presents the company with more national growth opportunities.</li>
+<li><strong>Increased VMT for EVs</strong>: The growth of electric vehicles (EVs) is expected to lead to increased vehicle miles traveled (VMT), which could offset the EV per-vehicle maintenance cost savings that EVs promise.</li>
+<li><strong>Self-Driving Cars</strong>: The growth of self-driving cars could result in people driving more frequently and for longer periods of time, leading to increased demand for automotive parts and services.</li>
+<li><strong>Dual Market Strategy</strong>: O'Reilly's dual market strategy, which caters to both DIY customers and professional service providers, provides a competitive advantage and opportunities for growth.</li>
+<li><strong>Omnichannel Initiatives</strong>: O'Reilly's focus on omnichannel initiatives, including online sales and in-store pickup options, aligns with the increasing demand for convenience and digital integration.</li>
+</ol>
+<p>Overall, O'Reilly Automotive has a strong track record of growth and is well-positioned to continue to expand its market share and increase its sales and profitability in the future.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+<div id="chat-container"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.ChatComponent) {
+      ChatComponent.init('S55hKcH2nJgTuSZ2hYhc', '#chat-container');
+    } else {
+      console.error('ChatComponent is not available');
+    }
+  });
+</script>
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../MercadoLibre/" class="md-footer__link md-footer__link--prev" aria-label="Previous: MercadoLibre">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                MercadoLibre
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../PDD%20Holdings/" class="md-footer__link md-footer__link--next" aria-label="Next: PDD Holdings">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                PDD Holdings
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltip", "header.autohide", "announce.dismiss", "navigation.footer", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+    
+  </body>
+</html>

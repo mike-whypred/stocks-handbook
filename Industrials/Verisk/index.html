@@ -1,0 +1,3298 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Paychex/">
+      
+      
+        <link rel="next" href="../../Information%20Technology/AMD/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+    
+    
+      
+        <title>Verisk - StockBook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+
+<script defer src="https://openai-widget.web.app/ChatComponent.bundle.js"></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="dark" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-what-is-verisk" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="StockBook" class="md-header__button md-logo" aria-label="StockBook" data-md-component="logo">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            StockBook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Verisk
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="dark" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="StockBook" class="md-nav__button md-logo" aria-label="StockBook" data-md-component="logo">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    StockBook
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to StockBook
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Communication Services
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Communication Services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Charter%20Communications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Charter Communications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Comcast/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comcast
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Electronic%20Arts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electronic Arts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Google/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Google
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Meta/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Netflix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Netflix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Sirius%20XM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sirius XM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/T-Mobile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    T Mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Take-Two%20Interactive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Take Two Interactive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Warner%20Bros/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Warner Bros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Consumer Discretionary
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Consumer Discretionary
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Airbnb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Airbnb
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Amazon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Amazon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Book%20Holdings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Book Holdings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/DoorDash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DoorDash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Lululemon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lululemon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Marriott%20International/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marriott International
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/MercadoLibre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MercadoLibre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/O%27Reilly%20Automotive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    O'Reilly Automotive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/PDD%20Holdings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PDD Holdings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Ross%20Stores/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ross Stores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Starbucks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Starbucks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Tesla/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tesla
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Consumer Staples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Consumer Staples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Coca-Cola%20Europacific%20Partners/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coca Cola Europacific Partners
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Costco/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Costco
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Dollar%20Tree/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dollar Tree
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Keurig%20Dr%20Pepper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Keurig Dr Pepper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Kraft%20Heinz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kraft Heinz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Mondel%C4%93z%20International/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mondelēz International
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Monster%20Beverage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Monster Beverage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/PepsiCo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PepsiCo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Walgreens%20Boots%20Alliance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Walgreens Boots Alliance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Energy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Energy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Energy/Baker%20Hughes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Baker Hughes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Energy/Diamondback%20Energy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diamondback Energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Financials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Financials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Financials/PayPal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PayPal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Health Care
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Health Care
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Amgen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Amgen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/AstraZeneca/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AstraZeneca
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Biogen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Biogen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/DexCom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DexCom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/GE%20HealthCare/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GE HealthCare
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Gilead%20Sciences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gilead Sciences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Idexx%20Laboratories/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Idexx Laboratories
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Illumina/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Illumina
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Intuitive%20Surgical/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intuitive Surgical
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Moderna/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Moderna
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Regeneron/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regeneron
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Vertex%20Pharmaceuticals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vertex Pharmaceuticals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Industrials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Industrials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ADP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSX/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cintas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cintas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Copart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Copart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fastenal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fastenal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Honeywell/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Honeywell
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Old%20Dominion%20Freight%20Line/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Old Dominion Freight Line
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Paccar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paccar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Paychex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paychex
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Verisk
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Verisk
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-verisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is Verisk?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-why-is-verisk-important-in-the-data-and-analytics-industry" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Why is Verisk Important in the Data and Analytics Industry?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-how-does-verisk-collect-and-analyze-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. How Does Verisk Collect and Analyze Data?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-who-are-the-major-clients-and-partners-of-verisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Who are the Major Clients and Partners of Verisk?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-what-are-the-challenges-and-future-outlook-for-verisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. What are the Challenges and Future Outlook for Verisk?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Information Technology
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Information Technology
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/AMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/ASML%20Holding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ASML Holding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Adobe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adobe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Analog%20Devices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analog Devices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Ansys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ansys
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Apple%20Inc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apple Inc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Applied%20Materials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applied Materials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Atlassian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atlassian
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Autodesk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Autodesk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Broadcom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Broadcom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/CDW%20Corporation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CDW Corporation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Cadence%20Design%20Systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cadence Design Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Cisco/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cisco
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Cognizant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cognizant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Crowdstrike/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crowdstrike
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Datadog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Datadog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Fortinet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fortinet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/GlobalFoundries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GlobalFoundries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Intel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Intuit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intuit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/KLA%20Corporation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KLA Corporation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Lam%20Research/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lam Research
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Marvell%20Technology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marvell Technology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Microchip%20Technology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microchip Technology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Micron%20Technology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Micron Technology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Microsoft/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microsoft
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/MongoDB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MongoDB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/NXP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NXP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Nvidia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nvidia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Onsemi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Onsemi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Palo%20Alto%20Networks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Palo Alto Networks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Qualcomm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Qualcomm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Roper%20Technologies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roper Technologies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Synopsys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Synopsys
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Texas%20Instruments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Texas Instruments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Workday%20Inc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workday Inc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Information%20Technology/Zscaler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zscaler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Materials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Materials/Linde/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linde
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Real Estate
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Real Estate
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Real%20Estate/CoStar%20Group/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CoStar Group
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Utilities
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Utilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Utilities/American%20Electric%20Power/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    American Electric Power
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Utilities/Constellation%20Energy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Constellation Energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Utilities/Exelon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exelon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Utilities/Xcel%20Energy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Xcel Energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-verisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is Verisk?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-why-is-verisk-important-in-the-data-and-analytics-industry" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Why is Verisk Important in the Data and Analytics Industry?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-how-does-verisk-collect-and-analyze-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. How Does Verisk Collect and Analyze Data?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-who-are-the-major-clients-and-partners-of-verisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Who are the Major Clients and Partners of Verisk?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-what-are-the-challenges-and-future-outlook-for-verisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. What are the Challenges and Future Outlook for Verisk?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+                  
+
+
+  <h1>Verisk</h1>
+
+<h2 id="1-what-is-verisk">1. What is Verisk?</h2>
+<h4 id="11-what-is-the-history-of-verisk">1.1 What is the History of Verisk?</h4>
+<p>Verisk is a global leader in data, analytics, and ethical corporate practices, with a history dating back to 1971. Here's a brief overview of the company's history:</p>
+<ul>
+<li>1971: The Insurance Services Office (ISO) was formed as a nonprofit advisory rating organization for U.S. insurers.</li>
+<li>1990s: ISO began to adopt new technology and became a leader in using data to help the U.S. insurance industry make smarter decisions.</li>
+<li>2001: ISO created Intego Solutions, Inc., which was later acquired by Verisk.</li>
+<li>2002: Scott Stephenson became the CEO of Intego, and the company began to acquire companies whose services and capabilities aligned with ISO.</li>
+<li>2009: Verisk went public with an initial public offering (IPO) that raised $1.9 billion for its shareholders.</li>
+<li>2010s: Verisk continued to grow and expand its services, including the development of predictive analytics and the integration of artificial intelligence (AI) and machine learning into its products.</li>
+<li>2020s: Verisk continued to innovate and expand its services, including the acquisition of Mavera, a Sweden-based insurtech firm.</li>
+</ul>
+<p>Today, Verisk is a global company with over 7,500 employees and a presence in over 30 countries. The company provides a range of services, including data analytics, risk assessment, and decision support consultations, to customers in the insurance, natural resources, financial services, government, and risk management sectors.</p>
+<p>Some of the key milestones in Verisk's history include:</p>
+<ul>
+<li>1971: ISO was formed as a nonprofit advisory rating organization for U.S. insurers.</li>
+<li>1990s: ISO began to adopt new technology and became a leader in using data to help the U.S. insurance industry make smarter decisions.</li>
+<li>2001: ISO created Intego Solutions, Inc., which was later acquired by Verisk.</li>
+<li>2009: Verisk went public with an initial public offering (IPO) that raised $1.9 billion for its shareholders.</li>
+<li>2014: Verisk developed its Auto History Score, a predictive analytics tool that helps insurers price personal auto insurance more precisely.</li>
+<li>2022: Verisk acquired Mavera, a Sweden-based insurtech firm that operates a personal injury claims management platform.</li>
+</ul>
+<p>Overall, Verisk has a long history of innovation and growth, and continues to be a leader in the data analytics and risk assessment industry.</p>
+<h4 id="12-what-are-the-core-business-areas-of-verisk">1.2 What are the Core Business Areas of Verisk?</h4>
+<p>The core business areas of Verisk are:</p>
+<ol>
+<li><strong>Data Analytics</strong>: Verisk provides advanced data analytics and predictive modeling solutions to help customers make informed decisions about risk and opportunities.</li>
+<li><strong>Risk Assessment</strong>: Verisk offers risk assessment and decision support solutions to help customers evaluate and manage risk across various industries, including insurance, energy, and financial services.</li>
+<li><strong>Insurance Services</strong>: Verisk provides a range of insurance services, including rating, underwriting, claims, and catastrophe risk modeling, to help insurers and reinsurers make informed decisions about risk and pricing.</li>
+<li><strong>Weather Risk</strong>: Verisk offers weather risk modeling and analytics solutions to help customers understand and manage weather-related risks.</li>
+<li><strong>Supply Chain Risk</strong>: Verisk provides supply chain risk management solutions to help customers identify and mitigate risks in their global supply chains.</li>
+<li><strong>Cyber Risk</strong>: Verisk offers cyber risk assessment and management solutions to help customers understand and manage cyber risks.</li>
+<li><strong>Environmental Risk</strong>: Verisk provides environmental risk assessment and management solutions to help customers understand and manage environmental risks.</li>
+<li><strong>Social Responsibility</strong>: Verisk is committed to corporate social responsibility and sustainability, and offers solutions and services to help customers manage their environmental, social, and governance (ESG) risks.</li>
+</ol>
+<p>These core business areas are supported by Verisk's advanced technologies, including artificial intelligence (AI), machine learning, and data analytics, as well as its extensive data assets and domain expertise.</p>
+<h4 id="13-how-does-verisk-provide-value-to-its-clients">1.3 How Does Verisk Provide Value to its Clients?</h4>
+<p>Verisk provides value to its clients in several ways:</p>
+<ol>
+<li><strong>Risk Analytics and Insights</strong>: Verisk offers proprietary platformed analytics, advanced modeling, and interpretation to deliver immediate and sustained value to its customers, helping them make informed decisions about risk management.</li>
+<li><strong>Extreme Event Models</strong>: Verisk's Touchstone risk management platform enables clients to conduct flood coverage analyses, in-depth retention scenarios, and enhanced catastrophe risk assessment, helping them better understand and manage their extreme event risk.</li>
+<li><strong>Personalized Customer Experiences</strong>: Verisk's solutions help personal auto insurers create personalized customer experiences, refine life, annuity, and pension risk selection, and quantify exposure with sophisticated catastrophe risk modeling.</li>
+<li><strong>Cybersecurity</strong>: Verisk has established security policies and procedures to protect its clients' data, including data classification, encryption, and access controls, to ensure the confidentiality, integrity, and availability of the data.</li>
+<li><strong>Innovation</strong>: Verisk is committed to innovation, investing in research and development to stay ahead of the curve and provide its clients with the latest technologies and solutions to manage risk.</li>
+<li><strong>Global Reach</strong>: Verisk has a global presence, with over 7,500 employees worldwide, providing its clients with a comprehensive range of solutions and expertise to manage risk across the globe.</li>
+<li><strong>Partnerships</strong>: Verisk partners with leading organizations, such as Seek Now, to provide its clients with access to the latest technologies and solutions, and to stay ahead of emerging risks.</li>
+<li><strong>Data-Driven Decision Making</strong>: Verisk provides its clients with access to real-time data, advanced analytics, and AI-powered risk modeling, enabling them to make data-driven decisions about risk management.</li>
+<li><strong>Compliance</strong>: Verisk helps its clients comply with regulatory requirements, such as data protection and cybersecurity regulations, by providing them with the necessary tools and expertise.</li>
+<li><strong>Sustainability</strong>: Verisk is committed to sustainability, investing in a vibrant culture with sound governance policies and effective practices, and helping its clients to redefine insurance as a human imperative.</li>
+</ol>
+<p>By providing these value-added services, Verisk helps its clients to better manage risk, improve their business outcomes, and achieve their strategic objectives.</p>
+<h2 id="2-why-is-verisk-important-in-the-data-and-analytics-industry">2. Why is Verisk Important in the Data and Analytics Industry?</h2>
+<h4 id="21-how-does-verisk-contribute-to-data-driven-decision-making">2.1 How Does Verisk Contribute to Data-driven Decision Making?</h4>
+<p>Verisk contributes to data-driven decision making in the insurance industry in several ways:</p>
+<ol>
+<li><strong>Advanced Analytics and Decision Support</strong>: Verisk provides advanced analytics and decision support solutions that help insurers make faster, more strategic data-driven decisions. Their solutions can help insurers find critical data at first notice of loss (FNOL) to complete claims, identify subrogation, and get to resolution faster.</li>
+<li><strong>Industry's Largest Claims Database</strong>: Verisk harnesses the power of AI and its industry-leading claims database to inform faster, more strategic data-driven decisions. This database provides insights that can help insurers identify trends, patterns, and correlations that inform their decision-making process.</li>
+<li><strong>Quality Data</strong>: Verisk emphasizes the importance of quality data in making smart business decisions. They provide solutions that help insurers maintain and improve data quality, which is vital for every enterprise.</li>
+<li><strong>Data-Driven Innovation</strong>: Verisk helps insurers innovate by providing data-driven insights that can inform their business strategies. Their solutions can help insurers stay ahead of the competition and drive growth in a rapidly changing market.</li>
+<li><strong>Pricing Data and Insights</strong>: Verisk provides pricing data and insights that can help insurers make informed decisions about pricing. Their pricing team provides regular updates on pricing data, which can help insurers navigate surge demand and local nuances.</li>
+<li><strong>Direct Integrations</strong>: Verisk's pricing team feeds the latest price points into property solutions like Xactimate, which can be customized and tailored to individual insurer and supplier needs. This can help insurers eliminate underpayments and better control indemnity spend.</li>
+<li><strong>Supply Chain Insights</strong>: Verisk provides insights into supply chain disruptions and market uncertainty, which can help insurers make informed decisions about material and labor costs. Their quarterly pricing updates and annual property reports provide valuable insights into building material and labor costs.</li>
+</ol>
+<p>Overall, Verisk's solutions and insights can help insurers make data-driven decisions that drive growth, reduce costs, and improve customer satisfaction.</p>
+<h4 id="22-what-are-the-key-advantages-of-using-verisks-solutions">2.2 What are the Key Advantages of Using Verisk's Solutions?</h4>
+<p>The key advantages of using Verisk's solutions include:</p>
+<ol>
+<li><strong>Boosted Productivity</strong>: Verisk's solutions help organizations optimize their applications, reduce development time, and improve employee satisfaction and productivity.</li>
+<li><strong>Optimized Application Performance</strong>: Verisk's solutions enable organizations to modernize their legacy commercial OS infrastructure, resulting in improved application performance and reduced dependencies on commercial operating systems.</li>
+<li><strong>Upskilled Workforce</strong>: Verisk's training programs, such as the AWS Application Modernization Lab, help organizations upskill their workforce with AWS certifications, enabling them to leverage best practices in cloud modernization.</li>
+<li><strong>Reduced Development Time</strong>: Verisk's solutions help organizations reduce development time by leveraging cloud-based services and automating repetitive tasks.</li>
+<li><strong>Improved Employee Satisfaction</strong>: Verisk's solutions help organizations improve employee satisfaction and productivity by providing a more modern and efficient work environment.</li>
+<li><strong>Enhanced Data Analytics</strong>: Verisk's solutions provide advanced data analytics capabilities, enabling organizations to make informed decisions about global risks and improve underwriting and claims outcomes.</li>
+<li><strong>Fraud Detection and Prevention</strong>: Verisk's solutions help organizations detect and prevent fraud, improving the overall efficiency and effectiveness of their operations.</li>
+<li><strong>Scalability and Flexibility</strong>: Verisk's solutions provide scalability and flexibility, enabling organizations to adapt to changing market conditions and customer needs.</li>
+<li><strong>Cost Savings</strong>: Verisk's solutions help organizations reduce costs by minimizing the need for commercial licensing and reducing the complexity of their technology infrastructure.</li>
+<li><strong>Innovative Solutions</strong>: Verisk's solutions provide innovative and cutting-edge solutions that help organizations stay ahead of the competition and adapt to changing market conditions.</li>
+</ol>
+<p>Overall, Verisk's solutions help organizations improve their operational efficiency, reduce costs, and make informed decisions about global risks, while also providing a more modern and efficient work environment for their employees.</p>
+<h4 id="23-how-does-verisk-drive-innovation-in-data-and-analytics">2.3 How Does Verisk Drive Innovation in Data and Analytics?</h4>
+<p>Verisk drives innovation in data and analytics through several key initiatives:</p>
+<ol>
+<li><strong>Machine Learning and Artificial Intelligence</strong>: Verisk is developing intelligent information extraction from unstructured data, a platform called "Machine" that allows users to create customized databases and interact with data through automated alerts and dashboards. Machine can integrate with downstream applications to provide predictive insights and analytics in real-time.</li>
+<li><strong>Domain Knowledge</strong>: Verisk's domain expertise across multiple sectors, including insurance, enables them to build models that extract relevant information for clients. This domain knowledge, combined with advanced analytics, enhances the value of their solutions.</li>
+<li><strong>Cutting-Edge Technology</strong>: Verisk leverages cloud-based technologies, such as AWS, to build scalable and secure data pipelines. They also use serverless technology, like Lambda, to optimize their ETL pipelines.</li>
+<li><strong>Actionable Insights</strong>: Verisk's solutions, such as LightSpeed Small Commercial, use advanced AI and ML to surface holistic insights on small business risks. These insights are designed to inform underwriting decisions and improve customer and agent experiences.</li>
+<li><strong>Collaborations and Partnerships</strong>: Verisk collaborates with other companies, such as Innovation Group, to drive digital property claims adoption and explore new opportunities in the insurance industry.</li>
+</ol>
+<p>Overall, Verisk's focus on innovation in data and analytics is driven by their commitment to providing actionable insights that help their clients make informed decisions. Their expertise in machine learning, AI, and domain knowledge enables them to develop solutions that are tailored to specific industries and use cases.</p>
+<h2 id="3-how-does-verisk-collect-and-analyze-data">3. How Does Verisk Collect and Analyze Data?</h2>
+<h4 id="31-what-are-the-sources-of-data-for-verisk">3.1 What are the Sources of Data for Verisk?</h4>
+<p>The sources of data for Verisk include:</p>
+<ol>
+<li>Diverse data sources: Verisk's Homeowner Data is developed through a range of diverse data sources, which are analyzed and validated to provide easy-to-understand insights for insurers.</li>
+<li>Real-time data enrichments: The Data Insight Hub provides an ever-evolving source of insurance datasets and analytics accessible at any part of the customer journey, including the point of quote.</li>
+<li>Unstructured data: Verisk's machine learning platform, Machine, can ingest various types of unstructured data, such as news articles, social media feeds, PDF files, and Excel files, to extract context and information.</li>
+<li>Structured data: Machine can also ingest structured data, such as government and proprietary data sets, to provide a comprehensive view of the data.</li>
+<li>Multi-source data: Verisk's pricing data is researched and reported from a variety of sources to ensure that no one party or industry has any undue influence on the pricing data.</li>
+<li>Actual market prices: Verisk's pricing data represents the standard of reliability and consistency, and is based on actual prices and transactions (completed bids) that have occurred recently in your area.</li>
+<li>Historical yield, price, and loss data: Verisk provides comprehensive analyses of historical yield, price, and loss data for crops, forests, and livestock.</li>
+<li>Claims data: Verisk's claims data is used to provide replacement cost estimates, detect potential fraud, and support investigations.</li>
+<li>Government data: Verisk's Anti-Fraud One - Government is tailored for state bureaus with seamless integration and industry data access.</li>
+<li>DMV data: Verisk's pricing data includes verified information from DMV data, contact information, and brief claims history to ensure precise payment.</li>
+</ol>
+<p>These sources of data enable Verisk to provide a wide range of products and services, including homeowner data, data insights, pricing data, and claims data, to help insurers and other stakeholders make informed decisions.</p>
+<h4 id="32-what-analytical-tools-and-techniques-does-verisk-utilize">3.2 What Analytical Tools and Techniques Does Verisk Utilize?</h4>
+<p>Verisk Analytics, Inc. utilizes various analytical tools and techniques to provide predictive analytics and decision support solutions to the property and casualty insurance industry. Some of the analytical tools and techniques used by Verisk include:</p>
+<ol>
+<li><strong>Predictive Analytics</strong>: Verisk uses predictive analytics to help insurers better compete in the auto, homeowners, and businessowners markets by predicting expected losses more accurately.</li>
+<li><strong>Data Analytics</strong>: Verisk provides data analytics services for the energy sector, helping clients to make informed decisions about global risks, including climate change, extreme events, ESG, and political issues.</li>
+<li><strong>Artificial Intelligence (AI)</strong>: Verisk uses AI-powered risk modeling, deep data sets, and advanced analytics and technology solutions to support insurers navigating today's challenges and preparing for what's next.</li>
+<li><strong>Machine Learning</strong>: Verisk employs machine learning to analyze billions of records and provide analytics and insights that help organizations manage risk.</li>
+<li><strong>Advanced Analytics</strong>: Verisk uses advanced analytics to help insurers improve and automate underwriting and claims outcomes, identify and mitigate fraud, build resilience to extreme events, optimize portfolio performance, and solve complex cost management challenges.</li>
+<li><strong>Catastrophe Modeling</strong>: Verisk provides catastrophe models covering natural hazards in more than 100 countries, helping insurers to assess and price risk quickly and accurately.</li>
+<li><strong>Financial Modeling</strong>: Verisk offers a new financial modeling framework that will be implemented by insurers and reinsurers to evaluate risk across the globe.</li>
+<li><strong>Real-Time Data</strong>: Verisk provides real-time data on market values, key property characteristics, and historical trends, helping insurers to make informed decisions about global risks.</li>
+<li><strong>Big Data Analytics</strong>: Verisk has access to a vast amount of data, with more than 34 billion records in commercial and personal lines, and detailed information on more than 15.9 million commercial properties.</li>
+<li><strong>Scientific Research</strong>: Verisk conducts scientific research to inform its partners about emerging risks, analyze potential impact, and create strong emergency management plans.</li>
+</ol>
+<p>These analytical tools and techniques enable Verisk to provide its clients with the analytics necessary to make informed decisions, manage risk effectively, and optimize their operations.</p>
+<h4 id="33-how-does-verisk-ensure-data-accuracy-and-quality">3.3 How Does Verisk Ensure Data Accuracy and Quality?</h4>
+<p>Verisk ensures data accuracy and quality through various measures, including:</p>
+<ol>
+<li><strong>Data Enrichment</strong>: Verisk's Data Insight Hub provides real-time data enrichment to increase the accuracy and competitiveness of insurance pricing and improve the customer journey.</li>
+<li><strong>Foundational Data</strong>: Verisk Marketing Solutions offers insights across three core components that power personalization: who, what, and when. This foundational data is built on 30 years of consumer history and includes shopping insights on major life purchases.</li>
+<li><strong>Data Security</strong>: Verisk employs the highest levels of security in the handling of sensitive customer data. Data is dynamically masked, encrypted, and customers have encryption keys that are unique to them.</li>
+<li><strong>Data Quality Standards</strong>: Verisk has a Data Classification and Handling Policy that classifies data based on its sensitivity and applies security controls accordingly. Data is labelled and handled in line with its classification.</li>
+<li><strong>Data Review and Validation</strong>: Verisk's Production Services team reviews data proactively, uses automated review tools, and documents the data review process to ensure data quality.</li>
+<li><strong>Data Storage and Retrieval</strong>: Verisk maintains data feeds and data stores, which are critical corporate assets, and expends resources to ensure their preservation, protection, quality, and management.</li>
+<li><strong>Data Flow</strong>: Verisk's ClaimSearch platform has a data flow that includes arrival and acceptance, storage and retrieval, and delivery of information-based products to external entities.</li>
+<li><strong>Access Management</strong>: Verisk requires participating organizations to comply with credentialing procedures and only authorized users can access claims information on behalf of the participating organization.</li>
+<li><strong>Regulatory Compliance</strong>: Verisk's solutions address regulatory compliance, including the Globally Harmonized System of Classification and Labelling of Chemicals (GHS) and other international regulations.</li>
+<li><strong>Continuous Improvement</strong>: Verisk continuously reviews and updates its data quality standards and practices to ensure the accuracy and reliability of its data.</li>
+</ol>
+<p>By implementing these measures, Verisk ensures the accuracy and quality of its data, which is critical for its customers' decision-making processes.</p>
+<h2 id="4-who-are-the-major-clients-and-partners-of-verisk">4. Who are the Major Clients and Partners of Verisk?</h2>
+<h4 id="41-which-industries-rely-on-verisks-data-and-insights">4.1 Which Industries Rely on Verisk's Data and Insights?</h4>
+<p>Verisk's data and insights are used by various industries, including:</p>
+<ol>
+<li><strong>Insurance</strong>: Verisk is a leading provider of data analytics and risk assessment solutions for the insurance industry. Its products and services help insurers make better-informed decisions about product pricing, underwriting, and reserve adequacy.</li>
+<li><strong>Construction</strong>: Verisk's data and insights are used by construction companies, such as Meridian Construction Restoration Group Inc., to manage risks and make informed decisions about construction projects.</li>
+<li><strong>Healthcare</strong>: Verisk's data and insights are used by healthcare organizations, such as Christus Health, to manage risks and make informed decisions about patient care and treatment.</li>
+<li><strong>Manufacturing</strong>: Verisk's data and insights are used by manufacturing companies, such as NER, to manage risks and make informed decisions about production and supply chain management.</li>
+<li><strong>Business Services</strong>: Verisk's data and insights are used by business services companies, such as Ruf Strategic Solutions, to manage risks and make informed decisions about marketing and advertising campaigns.</li>
+<li><strong>Technical</strong>: Verisk's data and insights are used by technical companies, such as 4C Business Solutions, to manage risks and make informed decisions about software development and technical consulting services.</li>
+</ol>
+<p>Verisk's data and insights are also used by various other industries, including energy, chemicals, metals, and mining, as well as financial services and more.</p>
+<h4 id="42-who-are-verisks-strategic-partners-in-the-industry">4.2 Who are Verisk's Strategic Partners in the Industry?</h4>
+<p>Verisk's strategic partners in the industry include:</p>
+<ol>
+<li>CCC Intelligent Solutions: Verisk has partnered with CCC to bring new innovations to the P&amp;C insurance claims industry, focusing on combating insurance fraud and providing better, faster service to policyholders.</li>
+<li>FRISS: Verisk has partnered with FRISS to expand its fraud-fighting capabilities for the insurance ecosystem, strengthening the industry's ability to combat fraud.</li>
+<li>Globlue Technologies: Verisk has partnered with Globlue Technologies to expand its fraud-fighting capabilities for the insurance ecosystem, strengthening the industry's ability to combat fraud.</li>
+</ol>
+<p>These partnerships demonstrate Verisk's commitment to collaborating with other industry leaders to drive innovation and improve the insurance industry's ability to combat fraud and provide better service to policyholders.</p>
+<h4 id="43-how-does-verisk-collaborate-with-clients-to-drive-success">4.3 How Does Verisk Collaborate with Clients to Drive Success?</h4>
+<p>Verisk collaborates with clients to drive success by:</p>
+<ol>
+<li>Providing expert data-driven analytic insights that help businesses, people, and societies become stronger, more resilient, and more sustainable.</li>
+<li>Empowering clients to strengthen operating efficiency, improve underwriting and claims outcomes, combat fraud, and make informed decisions about global risks, including climate change, extreme events, political topics, and ESG issues.</li>
+<li>Offering predictive analytics and decision support solutions to clients in rating, underwriting, claims, catastrophe, weather risk, and many other fields.</li>
+<li>Collaborating with senior leadership to address risk and pursue climate-related business opportunities, including acquisitions, investments in new and emerging technologies, and partnerships with other companies.</li>
+<li>Providing training and development programs to help employees grow as people and professionals, with a focus on leadership development, on-demand learning, and organized learning breaks.</li>
+<li>Fostering an inclusive culture where all team members feel they belong, with a commitment to diversity, equity, and inclusion.</li>
+<li>Encouraging innovation and promoting efficiency, with a focus on attracting and retaining top talent and breeding a culture that fosters collaboration and personal growth.</li>
+<li>Providing access to a robust ecosystem of partners that provide financial services solutions to enable key use cases, such as data analytics, machine learning, and artificial intelligence.</li>
+<li>Offering a range of products and services that help clients make better decisions on risk, faster, including underwriting solutions, claims solutions, and life insurance solutions.</li>
+<li>Collaborating with internal teams to define and improve the process by which we deliver products and services to clients, including implementation, support, and customer success.</li>
+</ol>
+<p>By collaborating with clients and employees in these ways, Verisk is able to drive success and achieve its mission of providing expert data-driven analytic insights that help businesses, people, and societies become stronger, more resilient, and more sustainable.</p>
+<h2 id="5-what-are-the-challenges-and-future-outlook-for-verisk">5. What are the Challenges and Future Outlook for Verisk?</h2>
+<h4 id="51-what-regulatory-and-compliance-challenges-does-verisk-face">5.1 What Regulatory and Compliance Challenges Does Verisk Face?</h4>
+<p>Based on the search results, Verisk faces the following regulatory and compliance challenges:</p>
+<ol>
+<li>Medicare Compliance and Reporting: Verisk provides solutions to help clients manage costs, boost accuracy, and comply with Medicare reporting requirements, including Section 111 reporting, Medicare conditional payment resolution, and future medical allocations compliance.</li>
+<li>MSP Compliance: Verisk notes that Medicare Secondary Payer (MSP) compliance will continue to present challenges for claims payers, and their solutions aim to help clients meet their reporting obligations and reduce risk.</li>
+<li>Global Regulatory Compliance: Verisk's 3E division provides regulatory data and content to help companies comply with global regulations, including those related to health and safety, social responsibility, environmental sustainability, and supply chain management.</li>
+<li>Compliance with Laws, Rules, and Regulations: Verisk's Code of Business Conduct and Ethics emphasizes the company's commitment to conducting business affairs with honesty and integrity and in full compliance with laws, rules, and regulations.</li>
+<li>Insurance Coverage and Regulatory Legal Challenges: Verisk's insurance coverage and regulatory legal team provides insights and perspectives on emerging issues and challenges in the insurance industry, including regulatory changes and compliance requirements.</li>
+</ol>
+<p>Some of the specific regulatory and compliance challenges that Verisk faces include:</p>
+<ul>
+<li>Managing complex regulatory requirements and ensuring compliance with global regulations</li>
+<li>Staying up-to-date with changing regulations and laws</li>
+<li>Ensuring accurate and complete reporting for Medicare and other government programs</li>
+<li>Reducing risk and improving processes through compliance with regulations</li>
+<li>Managing supply chain compliance and ensuring that suppliers and products meet regulatory requirements</li>
+<li>Providing accurate and reliable regulatory data and content to clients</li>
+<li>Ensuring compliance with laws, rules, and regulations in the conduct of business affairs.</li>
+</ul>
+<h4 id="52-how-does-verisk-address-data-privacy-and-security-concerns">5.2 How Does Verisk Address Data Privacy and Security Concerns?</h4>
+<p>Verisk addresses data privacy and security concerns through various measures, including:</p>
+<ol>
+<li><strong>State Data Privacy Notice</strong>: Verisk provides a State Data Privacy Notice that outlines the types of personal information collected, how it is used, and the rights of consumers to access, correct, or delete their personal information.</li>
+<li><strong>Data Classification and Handling Policy</strong>: Verisk has a policy in place to classify data based on its sensitivity and apply appropriate security controls to ensure its protection.</li>
+<li><strong>Data Quality Standards and Practices</strong>: Verisk has procedures in place to ensure the quality of data, including early and proactive review, automated review, and thorough documentation of the data review process.</li>
+<li><strong>Access Management</strong>: Verisk requires participating organizations to comply with credentialing procedures and only authorized users can access claims information on behalf of the participating organization.</li>
+<li><strong>Cybersecurity Approach</strong>: Verisk has an approach to identifying and addressing data security risks, which includes policies and practices relating to the collection, usage, and retention of customer information.</li>
+<li><strong>Data Breach Response</strong>: Verisk complies with legal, regulatory, and applicable industry requirements involving customers' confidential business information, personal data breaches, and the number of customers and individuals affected.</li>
+<li><strong>Employee Training</strong>: Verisk provides training to employees on data privacy and security, including awareness programs that increase individuals' knowledge of the vulnerabilities and consequences that may result from an information security breach.</li>
+<li><strong>Physical and Electronic Security Measures</strong>: Verisk has implemented electronic and physical security measures to protect information from unauthorized access, improper use, alteration, and unlawful or accidental destruction.</li>
+<li><strong>Business Continuity and Disaster Recovery Services</strong>: Verisk has a business continuity and disaster recovery plan in place to ensure the continuity of its operations in the event of a disaster or other business disruption.</li>
+<li><strong>Compliance with Regulations</strong>: Verisk complies with applicable laws, regulations, and industry standards, including the Gramm-Leach-Bliley Act, the Health Insurance Portability and Accountability Act (HIPAA), and the European Union's General Data Protection Regulation (GDPR).</li>
+</ol>
+<p>By implementing these measures, Verisk demonstrates its commitment to protecting the privacy and security of its customers' personal information and maintaining the trust of its stakeholders.</p>
+<h4 id="53-what-opportunities-and-threats-lie-ahead-for-verisk-in-the-industry">5.3 What Opportunities and Threats Lie Ahead for Verisk in the Industry?</h4>
+<p>Based on the search results, here are the opportunities and threats that lie ahead for Verisk in the industry:</p>
+<p><strong>Opportunities:</strong></p>
+<ol>
+<li>Expanding into new industries and regions: Verisk has the opportunity to expand its solutions into new industries and regions, which could lead to increased revenue and growth.</li>
+<li>Acquiring complementary businesses: Verisk has the opportunity to acquire complementary businesses that can enhance its capabilities and expand its offerings.</li>
+<li>Increasing demand for data analytics: The increasing demand for data analytics and insights presents an opportunity for Verisk to offer its services to a wider range of clients.</li>
+<li>Leveraging automation and AI: Verisk can leverage automation and AI to improve its operations, enhance decision-making capabilities, and drive operational excellence.</li>
+<li>Prioritizing insurtech trends: Verisk can prioritize insurtech trends, such as enhancing policyholder and internal user experiences, to stay ahead of the competition.</li>
+</ol>
+<p><strong>Threats:</strong></p>
+<ol>
+<li>Competition from other data and analytics providers: Verisk faces stiff competition from other data and analytics providers, which could impact its market share and revenue.</li>
+<li>Regulatory changes: Verisk must navigate potential regulatory changes and compliance costs, which could impact its operations and revenue.</li>
+<li>Economic fluctuations: Verisk is vulnerable to economic fluctuations, particularly in the North American market, which could impact its revenue and profitability.</li>
+<li>Dependence on a few major clients: Verisk's dependence on a few major clients presents a risk if one or more of these clients were to leave or reduce their business with Verisk.</li>
+<li>Reliance on a limited set of products: Verisk's reliance on a limited set of products presents a risk if there is a disruption or shift in demand for these products.</li>
+</ol>
+<p>Overall, Verisk has a strong foundation and opportunities for growth, but it must navigate the challenges and threats that lie ahead to maintain and exceed its current level of success.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+<div id="chat-container"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.ChatComponent) {
+      ChatComponent.init('S55hKcH2nJgTuSZ2hYhc', '#chat-container');
+    } else {
+      console.error('ChatComponent is not available');
+    }
+  });
+</script>
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Paychex/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Paychex">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Paychex
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../Information%20Technology/AMD/" class="md-footer__link md-footer__link--next" aria-label="Next: AMD">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                AMD
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltip", "header.autohide", "announce.dismiss", "navigation.footer", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+    
+  </body>
+</html>

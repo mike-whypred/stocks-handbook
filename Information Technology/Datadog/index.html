@@ -1,0 +1,3361 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Crowdstrike/">
+      
+      
+        <link rel="next" href="../Fortinet/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+    
+    
+      
+        <title>Datadog - StockBook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+
+<script defer src="https://openai-widget.web.app/ChatComponent.bundle.js"></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="dark" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-what-is-datadog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="StockBook" class="md-header__button md-logo" aria-label="StockBook" data-md-component="logo">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            StockBook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Datadog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="dark" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="StockBook" class="md-nav__button md-logo" aria-label="StockBook" data-md-component="logo">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    StockBook
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to StockBook
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Communication Services
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Communication Services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Charter%20Communications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Charter Communications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Comcast/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comcast
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Electronic%20Arts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electronic Arts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Google/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Google
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Meta/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Netflix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Netflix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Sirius%20XM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sirius XM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/T-Mobile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    T Mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Take-Two%20Interactive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Take Two Interactive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Communication%20Services/Warner%20Bros/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Warner Bros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Consumer Discretionary
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Consumer Discretionary
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Airbnb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Airbnb
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Amazon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Amazon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Book%20Holdings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Book Holdings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/DoorDash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DoorDash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Lululemon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lululemon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Marriott%20International/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marriott International
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/MercadoLibre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MercadoLibre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/O%27Reilly%20Automotive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    O'Reilly Automotive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/PDD%20Holdings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PDD Holdings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Ross%20Stores/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ross Stores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Starbucks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Starbucks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Discretionary/Tesla/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tesla
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Consumer Staples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Consumer Staples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Coca-Cola%20Europacific%20Partners/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coca Cola Europacific Partners
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Costco/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Costco
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Dollar%20Tree/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dollar Tree
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Keurig%20Dr%20Pepper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Keurig Dr Pepper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Kraft%20Heinz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kraft Heinz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Mondel%C4%93z%20International/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mondelēz International
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Monster%20Beverage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Monster Beverage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/PepsiCo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PepsiCo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Consumer%20Staples/Walgreens%20Boots%20Alliance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Walgreens Boots Alliance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Energy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Energy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Energy/Baker%20Hughes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Baker Hughes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Energy/Diamondback%20Energy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diamondback Energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Financials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Financials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Financials/PayPal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PayPal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Health Care
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Health Care
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Amgen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Amgen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/AstraZeneca/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AstraZeneca
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Biogen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Biogen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/DexCom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DexCom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/GE%20HealthCare/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GE HealthCare
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Gilead%20Sciences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gilead Sciences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Idexx%20Laboratories/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Idexx Laboratories
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Illumina/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Illumina
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Intuitive%20Surgical/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intuitive Surgical
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Moderna/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Moderna
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Regeneron/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regeneron
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Health%20Care/Vertex%20Pharmaceuticals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vertex Pharmaceuticals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Industrials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Industrials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/ADP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ADP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/CSX/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Cintas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cintas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Copart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Copart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Fastenal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fastenal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Honeywell/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Honeywell
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Old%20Dominion%20Freight%20Line/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Old Dominion Freight Line
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Paccar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paccar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Paychex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paychex
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Industrials/Verisk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verisk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Information Technology
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Information Technology
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ASML%20Holding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ASML Holding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Adobe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adobe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analog%20Devices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analog Devices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ansys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ansys
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Apple%20Inc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apple Inc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Applied%20Materials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applied Materials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Atlassian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atlassian
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Autodesk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Autodesk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Broadcom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Broadcom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CDW%20Corporation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CDW Corporation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cadence%20Design%20Systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cadence Design Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cisco/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cisco
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cognizant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cognizant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Crowdstrike/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crowdstrike
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Datadog
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Datadog
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-datadog" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is Datadog?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-why-is-datadog-essential-for-monitoring-and-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Why is Datadog Essential for Monitoring and Analytics?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-how-is-data-collected-and-analyzed-in-datadog" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. How is Data Collected and Analyzed in Datadog?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-who-are-the-key-users-and-market-trends-in-the-datadog-industry" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Who are the Key Users and Market Trends in the Datadog Industry?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-what-are-the-challenges-and-opportunities-in-the-datadog-sector" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. What are the Challenges and Opportunities in the Datadog Sector?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fortinet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fortinet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GlobalFoundries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GlobalFoundries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intuit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intuit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../KLA%20Corporation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KLA Corporation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lam%20Research/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lam Research
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marvell%20Technology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marvell Technology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Microchip%20Technology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microchip Technology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Micron%20Technology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Micron Technology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Microsoft/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microsoft
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MongoDB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MongoDB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NXP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NXP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Nvidia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nvidia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Onsemi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Onsemi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Palo%20Alto%20Networks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Palo Alto Networks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Qualcomm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Qualcomm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Roper%20Technologies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roper Technologies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Synopsys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Synopsys
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Texas%20Instruments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Texas Instruments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Workday%20Inc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workday Inc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zscaler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zscaler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Materials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Materials/Linde/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linde
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Real Estate
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Real Estate
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Real%20Estate/CoStar%20Group/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CoStar Group
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Utilities
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Utilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Utilities/American%20Electric%20Power/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    American Electric Power
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Utilities/Constellation%20Energy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Constellation Energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Utilities/Exelon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exelon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Utilities/Xcel%20Energy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Xcel Energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-datadog" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is Datadog?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-why-is-datadog-essential-for-monitoring-and-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Why is Datadog Essential for Monitoring and Analytics?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-how-is-data-collected-and-analyzed-in-datadog" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. How is Data Collected and Analyzed in Datadog?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-who-are-the-key-users-and-market-trends-in-the-datadog-industry" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Who are the Key Users and Market Trends in the Datadog Industry?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-what-are-the-challenges-and-opportunities-in-the-datadog-sector" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. What are the Challenges and Opportunities in the Datadog Sector?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+                  
+
+
+  <h1>Datadog</h1>
+
+<h2 id="1-what-is-datadog">1. What is Datadog?</h2>
+<h4 id="11-what-is-the-purpose-of-datadog">1.1 What is the Purpose of Datadog?</h4>
+<p>Datadog is a cloud-based monitoring and analytics platform that provides real-time insights into complex IT environments. It helps organizations of all sizes to monitor their infrastructure, applications, logs, and other data sources in a unified manner, enabling them to identify and resolve issues before they impact their customers quickly.</p>
+<p>Datadog offers a comprehensive set of features covering various IT monitoring and analytics aspects, including:</p>
+<ol>
+<li>Real-time monitoring: Provides real-time visibility into the performance of infrastructure, applications, logs, and other data sources.</li>
+<li>Unified monitoring: Collects data from various sources, including servers, databases, cloud services, containers, and other applications, and provides a single, unified view of the entire infrastructure.</li>
+<li>Customizable dashboards: Allows users to create custom dashboards, alerts, and reports focusing on the metrics that matter most to their business.</li>
+<li>Collaboration and communication tools: Includes powerful collaboration and communication tools, allowing teams to share information and collaborate on solving problems more effectively.</li>
+<li>Integration with other tools and services: Integrates with other tools and services like Slack, Jira, and AWS to further streamline workflows.</li>
+</ol>
+<p>Datadog is used by organizations to:</p>
+<ol>
+<li>Troubleshoot performance issues: Identify and resolve issues before they impact customers quickly.</li>
+<li>Optimize infrastructure use: Proactively lower costs by identifying underutilized resources and optimizing infrastructure use.</li>
+<li>Forecast backend requirements: Predict future resource consumption by reviewing historical infrastructure metrics.</li>
+<li>Monitor cloud environments: Monitor cloud environments, including AWS, Azure, and Google Cloud Platform.</li>
+<li>Monitor applications: Monitor applications, including web applications, mobile applications, and serverless applications.</li>
+</ol>
+<p>Datadog is a popular choice for companies of all sizes and industries, and is used by organizations such as Amazon, Microsoft, and Google.</p>
+<h4 id="12-how-does-datadog-work">1.2 How Does Datadog Work?</h4>
+<p>Datadog is a cloud-based monitoring and analytics platform that provides real-time visibility into complex IT environments. It helps organizations of all sizes to monitor their infrastructure, applications, logs, and other data sources in a unified manner, enabling them to identify and resolve issues before they impact their customers quickly.</p>
+<p>Here's how Datadog works:</p>
+<ol>
+<li><strong>Agents</strong>: Datadog uses lightweight agents that run on servers, containers, and applications to collect data and send it to the Datadog platform.</li>
+<li><strong>Integrations</strong>: Datadog has over 500 integrations with other apps and services, allowing users to fetch application metrics and logs from an extended infrastructure.</li>
+<li><strong>APIs</strong>: Datadog provides APIs for developers to access and manipulate data, create custom dashboards, and integrate with other tools and services.</li>
+<li><strong>Dashboards</strong>: Datadog allows users to create custom dashboards to monitor and visualize the health of their environment and infrastructure at a glance.</li>
+<li><strong>Monitors</strong>: Datadog provides monitors that can receive alerts and notifications for various performance metrics, allowing users to set up alerts for specific metrics and receive notifications via SMS, Slack, or other channels.</li>
+<li><strong>Log Management</strong>: Datadog's log management feature allows users to collect, analyze, and visualize logs from multiple sources, providing insights into application performance and troubleshooting.</li>
+<li><strong>Autodiscovery</strong>: Datadog's Autodiscovery feature allows it to automatically identify various components in an environment or system, such as services or containers.</li>
+<li><strong>Customization</strong>: Datadog is highly customizable, allowing users to configure the platform to meet their needs, create custom dashboards, alerts, and reports, and integrate with other tools and services.</li>
+</ol>
+<p>Datadog's key features include:</p>
+<ul>
+<li>Real-time monitoring</li>
+<li>Unified monitoring</li>
+<li>Customizable dashboards</li>
+<li>Alerting and notifications</li>
+<li>Log management</li>
+<li>Autodiscovery</li>
+<li>Integration with over 500 apps and services</li>
+<li>APIs for developers</li>
+<li>Mobile app for on-the-go monitoring</li>
+</ul>
+<p>Datadog is popular among organizations due to its ease of use, scalability, and comprehensive set of features. However, it can be expensive, and some users have reported issues with customer support and billing.</p>
+<h4 id="13-what-are-the-key-features-of-datadog">1.3 What are the Key Features of Datadog?</h4>
+<p>The key features of Datadog include:</p>
+<ol>
+<li><strong>Monitoring Infrastructure</strong>: Datadog provides real-time monitoring of infrastructure, including servers, databases, and applications.</li>
+<li><strong>Application Performance Monitoring (APM)</strong>: Datadog offers detailed insights into application performance, allowing for optimization and troubleshooting.</li>
+<li><strong>Distributed Tracing</strong>: Datadog's distributed tracing feature enables end-to-end monitoring of transactions and applications.</li>
+<li><strong>Dashboards and Real-time Measurements</strong>: Datadog provides customizable dashboards and real-time measurements to help users visualize and analyze data.</li>
+<li><strong>Extensibility and Integration</strong>: Datadog integrates with a wide range of tools and services, making it easy to collect data from multiple sources.</li>
+<li><strong>Security and Compliance</strong>: Datadog prioritizes security and compliance, with features such as data encryption, access controls, and audit trails.</li>
+<li><strong>Log Management</strong>: Datadog offers log management capabilities, allowing users to collect, search, and analyze logs for troubleshooting and security purposes.</li>
+<li><strong>Real-time Analytics</strong>: Datadog provides real-time analytics, enabling users to quickly identify and respond to issues.</li>
+<li><strong>Customizable Dashboards</strong>: Datadog's dashboards are fully customizable, allowing users to create visualizations that meet their specific needs.</li>
+<li><strong>Alerts and Notifications</strong>: Datadog offers customizable alerts and notifications, enabling users to stay informed of issues and take action quickly.</li>
+</ol>
+<p>These features make Datadog a comprehensive monitoring and analytics platform that can help organizations gain insights into their digital infrastructure and improve their overall performance and security.</p>
+<h2 id="2-why-is-datadog-essential-for-monitoring-and-analytics">2. Why is Datadog Essential for Monitoring and Analytics?</h2>
+<h4 id="21-how-does-datadog-help-in-monitoring-it-infrastructure">2.1 How Does Datadog Help in Monitoring IT Infrastructure?</h4>
+<p>Datadog is a monitoring and analytics tool that helps IT and DevOps teams to monitor and manage their infrastructure, applications, and services. It provides a unified platform for monitoring and analyzing performance metrics, logs, and other data to help teams identify and resolve issues quickly.</p>
+<p>Datadog offers a range of features that make it an effective tool for monitoring IT infrastructure, including:</p>
+<ol>
+<li><strong>Infrastructure Monitoring</strong>: Datadog provides real-time monitoring of infrastructure components such as servers, databases, and applications.</li>
+<li><strong>Customizable Dashboards</strong>: Datadog allows users to create custom dashboards to visualize performance metrics and logs.</li>
+<li><strong>Alerts and Notifications</strong>: Datadog sends alerts and notifications to users when performance issues are detected, allowing teams to respond quickly to issues.</li>
+<li><strong>Integration with 250+ Products</strong>: Datadog integrates with over 250 products and services, including cloud providers, container orchestration tools, and programming languages.</li>
+<li><strong>Log Management</strong>: Datadog collects and analyzes logs from applications and services, providing insights into performance and issues.</li>
+<li><strong>Machine Learning</strong>: Datadog uses machine learning algorithms to detect anomalies and predict performance issues, allowing teams to proactively respond to issues.</li>
+<li><strong>Unified Platform</strong>: Datadog provides a unified platform for monitoring and analyzing performance metrics, logs, and other data, allowing teams to gain a single view of their infrastructure.</li>
+</ol>
+<p>Datadog is used by a wide range of organizations, including financial services, manufacturing, healthcare, retail, and government agencies. It is available as a SaaS solution or can be deployed on-premises.</p>
+<p>Some of the key benefits of using Datadog include:</p>
+<ol>
+<li><strong>Improved Visibility</strong>: Datadog provides real-time visibility into infrastructure performance, allowing teams to identify and respond to issues quickly.</li>
+<li><strong>Faster Issue Resolution</strong>: Datadog's machine learning algorithms and customizable dashboards help teams to quickly identify and resolve performance issues.</li>
+<li><strong>Increased Efficiency</strong>: Datadog automates many monitoring and analysis tasks, freeing up teams to focus on higher-level tasks.</li>
+<li><strong>Better Decision Making</strong>: Datadog provides insights and analytics that help teams to make better decisions about infrastructure and application performance.</li>
+</ol>
+<p>Overall, Datadog is a powerful tool for monitoring and managing IT infrastructure, and is widely used by organizations of all sizes and industries.</p>
+<h4 id="22-what-are-the-benefits-of-using-datadog-for-analytics">2.2 What are the Benefits of Using Datadog for Analytics?</h4>
+<p>The benefits of using Datadog for analytics include:</p>
+<ol>
+<li><strong>Real-time monitoring</strong>: Datadog provides real-time monitoring of applications, infrastructure, and services, allowing teams to quickly identify and respond to issues.</li>
+<li><strong>Comprehensive visibility</strong>: Datadog offers a single pane of glass for monitoring and analyzing data from multiple sources, providing a comprehensive view of the entire infrastructure.</li>
+<li><strong>Customizable dashboards</strong>: Datadog's dashboards are highly customizable, allowing teams to create tailored views that meet their specific needs.</li>
+<li><strong>Powerful log analysis</strong>: Datadog's log analysis capabilities enable teams to quickly identify and troubleshoot issues, and to gain insights into application performance and user behavior.</li>
+<li><strong>Integration with other tools</strong>: Datadog integrates with a wide range of tools and services, including AWS, Azure, Google Cloud, and many others, making it easy to incorporate into existing workflows.</li>
+<li><strong>Scalability</strong>: Datadog is designed to scale with large and complex environments, making it a good choice for organizations with rapidly growing infrastructure.</li>
+<li><strong>User-friendly interface</strong>: Datadog's interface is designed to be user-friendly and intuitive, making it easy for teams to get started and begin using the platform quickly.</li>
+<li><strong>Advanced analytics</strong>: Datadog offers advanced analytics capabilities, including machine learning and artificial intelligence, to help teams gain deeper insights into their data.</li>
+<li><strong>Security and compliance</strong>: Datadog provides robust security and compliance features, including data encryption, access controls, and auditing, to help teams meet regulatory requirements.</li>
+<li><strong>Customer support</strong>: Datadog offers 24/7 customer support, including online documentation, community forums, and dedicated support teams, to help teams get the most out of the platform.</li>
+</ol>
+<p>Overall, Datadog's benefits include its ability to provide real-time monitoring, comprehensive visibility, and advanced analytics capabilities, making it a popular choice for organizations looking to improve their observability and analytics capabilities.</p>
+<h4 id="23-how-does-datadog-improve-operational-efficiency">2.3 How Does Datadog Improve Operational Efficiency?</h4>
+<p>Datadog improves operational efficiency in several ways:</p>
+<ol>
+<li><strong>Reduced IT costs</strong>: By providing a single, unified platform for monitoring and analytics, Datadog eliminates the need for multiple tools, reducing the overhead and complexity of managing on-premise monitoring tools.</li>
+<li><strong>Improved visibility</strong>: Datadog provides real-time visibility into application performance and infrastructure, enabling teams to detect and address issues faster, and optimize performance.</li>
+<li><strong>Simplified monitoring</strong>: Datadog's intuitive and easy-to-navigate user interface reduces the learning curve, making it accessible to a wider range of users, not just experts in monitoring and analytics.</li>
+<li><strong>Automated monitoring</strong>: Datadog automates infrastructure monitoring, application performance monitoring (APM), and log management, freeing up teams from manual monitoring tasks and reducing the risk of human error.</li>
+<li><strong>Enhanced collaboration</strong>: Datadog's platform creates a collaborative environment where developers, operations teams, and business users can work together to monitor and optimize applications, fostering a DevOps culture.</li>
+<li><strong>Advanced analytics</strong>: Datadog's advanced analytics and machine learning capabilities provide actionable insights and enable customers to proactively address potential issues and optimize performance.</li>
+<li><strong>Scalability</strong>: Datadog's cloud-based architecture allows customers to easily scale their usage, and maintenance tasks like updates and bug fixes are handled by Datadog, reducing operational costs and complexity.</li>
+<li><strong>Real-time monitoring</strong>: Datadog's real-time monitoring capabilities enable teams to detect and address issues faster, reducing downtime and improving overall operational efficiency.</li>
+<li><strong>Integration with multiple tools and technologies</strong>: Datadog's extensive integration capabilities with various tools and technologies enable seamless monitoring across diverse technology stacks, reducing the need for multiple tools and increasing operational efficiency.</li>
+<li><strong>Improved user experience</strong>: Datadog's Real User Monitoring (RUM) functionality captures 100% of users' site sessions, providing a full view of how people are interacting with the system and identifying issues that could be adversely impacting their experience.</li>
+</ol>
+<p>By providing these features and capabilities, Datadog helps organizations improve operational efficiency, reduce costs, and enhance collaboration and communication across teams.</p>
+<h2 id="3-how-is-data-collected-and-analyzed-in-datadog">3. How is Data Collected and Analyzed in Datadog?</h2>
+<h4 id="31-what-data-sources-does-datadog-collect-information-from">3.1 What Data Sources Does Datadog Collect Information From?</h4>
+<p>Datadog collects information from a wide range of data sources, including:</p>
+<ol>
+<li><strong>Hosts</strong>: Datadog can collect metrics and logs from hosts, including CPU, memory, disk usage, and network traffic.</li>
+<li><strong>Containers</strong>: Datadog can collect metrics and logs from containers, including CPU, memory, and network traffic.</li>
+<li><strong>Cloud providers</strong>: Datadog can collect metrics and logs from cloud providers such as AWS, Azure, and Google Cloud.</li>
+<li><strong>Databases</strong>: Datadog can collect metrics and logs from databases such as Postgres, MySQL, and Oracle.</li>
+<li><strong>Applications</strong>: Datadog can collect metrics and logs from applications, including web applications, mobile applications, and APIs.</li>
+<li><strong>Network devices</strong>: Datadog can collect metrics and logs from network devices such as routers, switches, and firewalls.</li>
+<li><strong>Serverless functions</strong>: Datadog can collect metrics and logs from serverless functions such as AWS Lambda and Azure Functions.</li>
+<li><strong>Kubernetes</strong>: Datadog can collect metrics and logs from Kubernetes clusters.</li>
+<li><strong>OpenTelemetry</strong>: Datadog can collect metrics and logs from OpenTelemetry-enabled applications.</li>
+<li><strong>APIs</strong>: Datadog can collect metrics and logs from APIs, including RESTful APIs and GraphQL APIs.</li>
+<li><strong>Log files</strong>: Datadog can collect logs from log files, including log files from applications, systems, and networks.</li>
+<li><strong>System logs</strong>: Datadog can collect system logs, including system logs from operating systems, applications, and services.</li>
+<li><strong>Network logs</strong>: Datadog can collect network logs, including network logs from firewalls, routers, and switches.</li>
+<li><strong>Security information and event management (SIEM) systems</strong>: Datadog can collect data from SIEM systems, including logs and alerts.</li>
+<li><strong>Cloud security information and event management (Cloud SIEM) systems</strong>: Datadog can collect data from Cloud SIEM systems, including logs and alerts.</li>
+</ol>
+<p>These are just some examples of the many data sources that Datadog can collect information from. Datadog's ability to collect data from a wide range of sources allows it to provide a comprehensive view of an organization's technology stack and help teams identify and resolve issues more quickly.</p>
+<h4 id="32-how-is-data-analyzed-and-visualized-in-datadog">3.2 How is Data Analyzed and Visualized in Datadog?</h4>
+<p>Datadog is a monitoring and analytics platform that provides a range of features for analyzing and visualizing data. Here are some of the ways Datadog analyzes and visualizes data:</p>
+<ol>
+<li><strong>Log Analysis</strong>: Datadog transforms unstructured streams of raw log data into centralized, structured datasets. It automatically applies tags to logs after ingestion and allows users to analyze large volumes of log data and perform complex investigations without having to learn a complex query language.</li>
+<li><strong>Real-Time Analytics</strong>: Datadog provides real-time analytics capabilities, allowing users to analyze data as it is generated, rather than having to wait for data to be aggregated and processed.</li>
+<li><strong>Machine Learning</strong>: Datadog uses machine learning to identify common ranges and patterns for monitored data, so that abnormal behavior can be quickly flagged for operators.</li>
+<li><strong>Visualization</strong>: Datadog provides a range of visualization tools, including customizable dashboards, charts, and graphs, to help users understand and interpret their data.</li>
+<li><strong>Search and Filtering</strong>: Datadog provides powerful search and filtering capabilities, allowing users to quickly find and analyze specific data points.</li>
+<li><strong>Alerting and Collaboration</strong>: Datadog provides alerting and collaboration features, allowing users to set up custom alerts and notifications, and collaborate with others on data analysis and troubleshooting.</li>
+<li><strong>Security Monitoring</strong>: Datadog provides security monitoring capabilities, including the ability to analyze security logs and events, and identify potential security threats.</li>
+<li><strong>Infrastructure Monitoring</strong>: Datadog provides infrastructure monitoring capabilities, including the ability to monitor physical hardware components and operating system activities, and identify potential issues before they become critical.</li>
+</ol>
+<p>Overall, Datadog provides a comprehensive platform for analyzing and visualizing data, with a range of features and capabilities that make it easy to understand and interpret complex data sets.</p>
+<h4 id="33-what-insights-can-be-gained-from-datadogs-data-analysis">3.3 What Insights Can be Gained from Datadog's Data Analysis?</h4>
+<p>Datadog is a cloud-based monitoring and analytics platform that provides full-stack observability for dynamic and cloud-native environments. It allows organizations to collect, correlate, and visualize data from various sources, providing insights into the performance, availability, and health of applications, infrastructure, and networks.</p>
+<p>Some of the key insights that can be gained from Datadog's data analysis include:</p>
+<ol>
+<li><strong>Real-time monitoring</strong>: Datadog provides real-time visibility into the performance of infrastructure, applications, logs, and other data sources, allowing users to identify and resolve issues before they impact customers quickly.</li>
+<li><strong>Unified monitoring</strong>: Datadog collects data from various sources, including servers, databases, cloud services, containers, and other applications, and provides a single, unified view of the entire infrastructure.</li>
+<li><strong>Customizable dashboards</strong>: Datadog allows users to create custom dashboards, alerts, and reports focusing on the metrics that matter most to their business.</li>
+<li><strong>Infrastructure monitoring</strong>: Datadog can monitor servers, databases, and cloud services to ensure high availability and performance.</li>
+<li><strong>Application monitoring</strong>: Datadog can monitor applications and services to ensure they meet performance and availability requirements.</li>
+<li><strong>DevOps monitoring</strong>: Datadog can help teams monitor and optimize their DevOps workflows, such as building pipelines, deploying, and testing.</li>
+<li><strong>Security monitoring</strong>: Datadog can detect and alert security threats in real-time, such as malicious activity, vulnerabilities, and compliance violations.</li>
+<li><strong>Business intelligence</strong>: Datadog can provide insights into key business metrics, such as user engagement, revenue, and churn.</li>
+</ol>
+<p>Some of the key features of Datadog include:</p>
+<ol>
+<li><strong>Real-time monitoring</strong>: Datadog provides real-time visibility into the performance of infrastructure, applications, logs, and other data sources.</li>
+<li><strong>Unified monitoring</strong>: Datadog collects data from various sources and provides a single, unified view of the entire infrastructure.</li>
+<li><strong>Customizable dashboards</strong>: Datadog allows users to create custom dashboards, alerts, and reports focusing on the metrics that matter most to their business.</li>
+<li><strong>Infrastructure monitoring</strong>: Datadog can monitor servers, databases, and cloud services to ensure high availability and performance.</li>
+<li><strong>Application monitoring</strong>: Datadog can monitor applications and services to ensure they meet performance and availability requirements.</li>
+<li><strong>DevOps monitoring</strong>: Datadog can help teams monitor and optimize their DevOps workflows, such as building pipelines, deploying, and testing.</li>
+<li><strong>Security monitoring</strong>: Datadog can detect and alert security threats in real-time, such as malicious activity, vulnerabilities, and compliance violations.</li>
+<li><strong>Business intelligence</strong>: Datadog can provide insights into key business metrics, such as user engagement, revenue, and churn.</li>
+</ol>
+<p>Some of the key benefits of using Datadog include:</p>
+<ol>
+<li><strong>Improved visibility</strong>: Datadog provides real-time visibility into the performance of infrastructure, applications, logs, and other data sources.</li>
+<li><strong>Enhanced collaboration</strong>: Datadog allows teams to collaborate and share information more effectively.</li>
+<li><strong>Increased efficiency</strong>: Datadog can help teams identify and resolve issues more quickly, reducing downtime and improving overall efficiency.</li>
+<li><strong>Better decision-making</strong>: Datadog provides insights into key business metrics, allowing teams to make more informed decisions.</li>
+<li><strong>Cost savings</strong>: Datadog can help teams identify and optimize resource usage, reducing costs and improving overall efficiency.</li>
+</ol>
+<p>Some of the key challenges of using Datadog include:</p>
+<ol>
+<li><strong>Complexity</strong>: Datadog can be complex to set up and configure, especially for large-scale environments.</li>
+<li><strong>Cost</strong>: Datadog can be expensive, especially for large-scale environments or for organizations with complex monitoring needs.</li>
+<li><strong>Data retention</strong>: Datadog has limitations on data retention, which can make it difficult to analyze historical data.</li>
+<li><strong>Integration</strong>: Datadog may require integration with other tools and services, which can be time-consuming and complex.</li>
+</ol>
+<p>Overall, Datadog is a powerful platform that provides real-time monitoring and analytics for modern IT environments. By using Datadog, organizations can gain valuable insights into their infrastructure, improve performance, and reduce costs.</p>
+<h2 id="4-who-are-the-key-users-and-market-trends-in-the-datadog-industry">4. Who are the Key Users and Market Trends in the Datadog Industry?</h2>
+<h4 id="41-who-are-the-primary-users-of-datadogs-monitoring-and-analytics-platform">4.1 Who are the Primary Users of Datadog's Monitoring and Analytics Platform?</h4>
+<p>The primary users of Datadog's monitoring and analytics platform are:</p>
+<ol>
+<li>Cloud-native companies: Datadog is primarily used by cloud-native companies that require infrastructure monitoring and observability.</li>
+<li>Developers: Datadog's platform is designed for developers, IT operations teams, and security engineers who need to monitor and analyze their applications, infrastructure, and services.</li>
+<li>IT operations teams: Datadog's platform is used by IT operations teams to monitor and manage their infrastructure, applications, and services.</li>
+<li>Security engineers: Datadog's security monitoring features are used by security engineers to detect and respond to security threats.</li>
+<li>Business users: Datadog's platform is also used by business users who need to analyze and visualize data to make informed business decisions.</li>
+</ol>
+<p>These users include:</p>
+<ul>
+<li>Cloud-native startups</li>
+<li>Fast-growing companies</li>
+<li>Enterprises with complex IT infrastructure</li>
+<li>Developers and IT operations teams</li>
+<li>Security engineers and incident responders</li>
+<li>Business users and analysts who need to analyze and visualize data.</li>
+</ul>
+<h4 id="42-what-are-the-current-market-trends-in-datadogs-industry">4.2 What are the Current Market Trends in Datadog's Industry?</h4>
+<p>The current market trends in Datadog's industry are:</p>
+<ol>
+<li><strong>Growth prospects</strong>: Datadog's stock has seen significant growth, with a 65.64% increase since the last report, beating the market by close to 40%. The company is expected to reach an estimated $1,250B by 2027, with a CAGR of 20% in the public cloud sector.</li>
+<li><strong>Cloud security</strong>: Datadog's cloud security market is anticipated to be $40B by 2027, with a CAGR of 16%. This growth is driven by the increasing demand for cloud security solutions as more enterprises move to cloud computing.</li>
+<li><strong>Observability market</strong>: The Gartner IT Operations Market expects the observability market to reach $80B by 2027, with a CAGR of 11%. Datadog's observability market is expected to grow alongside this trend.</li>
+<li><strong>Financial performance</strong>: Datadog's financial performance has been strong, with revenue growth of 27% to $611 million in the first quarter of 2024, and a 23% non-GAAP operating margin.</li>
+<li><strong>Guidance</strong>: Datadog's guidance for the upcoming quarter fell short of expectations, leading to a decline in the company's stock price.</li>
+<li><strong>Valuation</strong>: Datadog's current valuation is approximately $40.08B, with an enterprise value of $40.08B.</li>
+<li><strong>Competition</strong>: Datadog's competitors in the observability and security space include other companies such as New Relic, Splunk, and PagerDuty.</li>
+</ol>
+<p>Overall, the industry trends suggest that Datadog is well-positioned to continue its growth trajectory, driven by the increasing demand for cloud security and observability solutions. However, the company's financial performance and guidance will be closely watched by investors to determine its future prospects.</p>
+<h4 id="43-how-is-datadog-positioned-among-its-competitors">4.3 How is Datadog Positioned Among its Competitors?</h4>
+<p>Datadog is positioned as a leader in the cloud-based monitoring and analytics platform market, offering a comprehensive suite of tools for infrastructure monitoring, application performance monitoring, log management, and real-user monitoring. Here are some key strengths, weaknesses, opportunities, and threats that affect Datadog's position:</p>
+<p><strong>Strengths:</strong></p>
+<ol>
+<li>Robust platform: Datadog's platform is known for its reliability, scalability, and ease of use.</li>
+<li>Unified monitoring: Datadog offers a comprehensive monitoring solution that covers the entire IT stack, from infrastructure to applications.</li>
+<li>Strong brand: Datadog has built a strong brand and reputation in the industry, making it a first-choice option for many businesses.</li>
+<li>Integrations: Datadog has a vast library of integrations with third-party software providers, making it easy for customers to integrate Datadog with their existing tools and technologies.</li>
+<li>Advanced analytics: Datadog's platform offers advanced analytics and machine learning capabilities, providing actionable insights and enabling customers to proactively address potential issues.</li>
+</ol>
+<p><strong>Weaknesses:</strong></p>
+<ol>
+<li>Dependency on a limited number of clients: Datadog generates a significant portion of its revenue from a limited number of customers, making it vulnerable to customer churn.</li>
+<li>Concentration of services: Datadog's services are mainly focused on monitoring and data analytics, making it vulnerable to competition and market saturation.</li>
+<li>Limited geographic coverage: Datadog's presence is mainly confined to the United States and Europe, limiting its reach and potential for growth in other regions.</li>
+<li>Dependency on integrations: Datadog is heavily reliant on integrations with third-party software providers, making it vulnerable to changes in these integrations or the discontinuation of these integrations.</li>
+</ol>
+<p><strong>Opportunities:</strong></p>
+<ol>
+<li>Expansion in other countries: Expanding into international markets will increase Datadog's client base exponentially and provide opportunities for growth.</li>
+<li>Consumer-based approach: Offering a consumer-oriented solution will allow Datadog to increase its customer base and negotiate better deals with large corporations.</li>
+<li>New product offerings: Datadog can continue to expand its product portfolio and launch new features based on customer feedback, further differentiating itself from competitors.</li>
+</ol>
+<p><strong>Threats:</strong></p>
+<ol>
+<li>Risk of becoming a commodity product: Datadog's product may become too commoditized, making it difficult for the company to differentiate itself from competitors.</li>
+<li>Infrastructure competitors: Other companies are entering the market with specialized service offerings, potentially threatening Datadog's market share.</li>
+<li>Competition from other monitoring and analytics platforms: Other monitoring and analytics platforms, such as New Relic, Instana, and Dynatrace, are competing with Datadog for market share.</li>
+</ol>
+<p>Overall, Datadog's strengths, such as its robust platform, unified monitoring, and strong brand, position it well in the market. However, its weaknesses, such as its dependency on a limited number of clients and limited geographic coverage, present opportunities for growth and expansion.</p>
+<h2 id="5-what-are-the-challenges-and-opportunities-in-the-datadog-sector">5. What are the Challenges and Opportunities in the Datadog Sector?</h2>
+<h4 id="51-what-challenges-do-companies-face-in-implementing-datadog">5.1 What Challenges Do Companies Face in Implementing Datadog?</h4>
+<p>The challenges companies face in implementing Datadog include:</p>
+<ol>
+<li><strong>Complex Log Ingestion, Indexing, and Retention Process</strong>: Datadog's log management workflow can be complex, making it difficult for companies to ingest, index, and retain logs efficiently.</li>
+<li><strong>Costly Datadog Log Analytics Workflow</strong>: Datadog's pricing model can be expensive, especially for companies that generate large volumes of logs. The cost of log retention and analysis can quickly add up, making it challenging for companies to manage their costs.</li>
+<li><strong>Scaling Challenges</strong>: As companies grow and generate more data, Datadog's scalability can become a challenge. This can lead to reduced data retention, increased operational burden, and limited ability to answer relevant analytics questions.</li>
+<li><strong>Data Transformation and Rehydration Processes</strong>: Datadog's log management process requires data transformation and rehydration, which can be time-consuming and require dedicated resources.</li>
+<li><strong>Limited Ability to Answer Relevant Analytics Questions</strong>: Datadog's log analytics capabilities may not be able to answer all the questions companies need to answer, leading to frustration and the need for additional tools.</li>
+</ol>
+<p>These challenges can make it difficult for companies to fully leverage the benefits of Datadog's log analytics capabilities, leading to increased costs, reduced data retention, and limited ability to answer relevant analytics questions.</p>
+<h4 id="52-what-opportunities-exist-for-datadogs-expansion-and-innovation">5.2 What Opportunities Exist for Datadog's Expansion and Innovation?</h4>
+<p>Based on the search results, here are some opportunities for Datadog's expansion and innovation:</p>
+<ol>
+<li><strong>Expansion into adjacent product categories</strong>: Datadog has already expanded into adjacent product categories such as developer experience and security. This trend is expected to continue, with the company building out its solution in these areas and moving upmarket in feature parity.</li>
+<li><strong>Security and governance</strong>: Datadog's goal is to dominate the security and governance layer for the cloud. The company has already made significant progress in this area, with its security and governance products being used by large enterprises.</li>
+<li><strong>Developer tools</strong>: Datadog is also expanding into developer tools, with a focus on providing a unified platform for developers to manage their applications and infrastructure.</li>
+<li><strong>Cloud-native applications</strong>: Datadog's platform is designed to work with cloud-native applications, and the company is well-positioned to benefit from the growing adoption of cloud-native technologies.</li>
+<li><strong>Artificial intelligence and machine learning</strong>: Datadog is already using AI and ML to improve its platform, and the company is likely to continue to invest in these areas to enhance its products and services.</li>
+<li><strong>International expansion</strong>: Datadog has a strong presence in the US and Europe, but the company has opportunities to expand into other regions, particularly in Asia and Latin America.</li>
+<li><strong>Partnerships and integrations</strong>: Datadog has a strong track record of partnerships and integrations with other companies, and the company is likely to continue to pursue these opportunities to expand its reach and capabilities.</li>
+<li><strong>New use cases</strong>: Datadog's platform is designed to be highly flexible and adaptable, and the company is likely to continue to identify new use cases and applications for its technology.</li>
+<li><strong>Enhancing its observability capabilities</strong>: Datadog's observability capabilities are a key differentiator for the company, and the company is likely to continue to enhance and expand these capabilities to provide even more value to its customers.</li>
+<li><strong>Investing in research and development</strong>: Datadog has a strong commitment to R&amp;D, and the company is likely to continue to invest in this area to drive innovation and growth.</li>
+</ol>
+<p>Overall, Datadog has a strong foundation for expansion and innovation, and the company is well-positioned to continue to grow and succeed in the years ahead.</p>
+<h4 id="53-how-does-datadog-adapt-to-changing-technology-and-business-needs">5.3 How Does Datadog Adapt to Changing Technology and Business Needs?</h4>
+<p>Datadog adapts to changing technology and business needs in several ways:</p>
+<ol>
+<li><strong>Continuous Innovation</strong>: Datadog regularly releases new features and updates to its platform, such as Single-Step Instrumentation, Trace Queries, and Production Variable Snapshots, to help customers improve their observability and troubleshooting capabilities.</li>
+<li><strong>Expansion of Product Offerings</strong>: Datadog has expanded its product portfolio to include new features and services, such as Mobile Session Replay, Static Analysis for Python, and Digital Experience Monitoring, to cater to the evolving needs of its customers.</li>
+<li><strong>Integration with Emerging Technologies</strong>: Datadog has integrated its platform with emerging technologies like OpenTelemetry, Cloud Migration, and Machine Learning to help customers leverage these technologies and stay ahead of the curve.</li>
+<li><strong>Adaptation to Industry Trends</strong>: Datadog has adapted to industry trends such as Cloud Computing, DevSecOps, and Digital Transformation, and has positioned itself as a leader in these areas.</li>
+<li><strong>Investment in Engineering Growth</strong>: Datadog has invested in engineering growth, hiring the best and brightest talent from across the globe, and has prioritized product-focused engineering to ensure that every engineer feels in touch with the product.</li>
+<li><strong>Focus on Customer Experience</strong>: Datadog has prioritized customer experience, providing a high-touch candidate experience and interview process to ensure that customers receive the best possible support and service.</li>
+<li><strong>Scalability</strong>: Datadog has scaled its business to meet the growing demands of its customers, with a focus on providing a seamless and efficient experience for its customers.</li>
+<li><strong>Partnerships and Collaborations</strong>: Datadog has formed partnerships and collaborations with other companies to stay ahead of the curve and provide its customers with the best possible solutions.</li>
+</ol>
+<p>By adapting to changing technology and business needs, Datadog has positioned itself as a leader in the observability and monitoring space, and has continued to grow and thrive in a rapidly evolving market.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+<div id="chat-container"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.ChatComponent) {
+      ChatComponent.init('S55hKcH2nJgTuSZ2hYhc', '#chat-container');
+    } else {
+      console.error('ChatComponent is not available');
+    }
+  });
+</script>
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Crowdstrike/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Crowdstrike">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Crowdstrike
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Fortinet/" class="md-footer__link md-footer__link--next" aria-label="Next: Fortinet">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Fortinet
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltip", "header.autohide", "announce.dismiss", "navigation.footer", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+{{ super() }}
+<script defer src="https://openai-widget.web.app/ChatComponent.bundle.js"></script>
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+<div id="chat-container"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.ChatComponent) {
+      ChatComponent.init('S55hKcH2nJgTuSZ2hYhc', '#chat-container');
+    } else {
+      console.error('ChatComponent is not available');
+    }
+  });
+</script>
+{% endblock %}
