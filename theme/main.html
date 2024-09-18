@@ -2,19 +2,20 @@
 
 {% block extrahead %}
 {{ super() }}
-<script defer src="https://openai-widget.web.app/ChatComponent.bundle.js"></script>
+<script>
+  window.embeddedChatbotConfig = {
+  chatbotId: "l76tlZUQmt8dY1_wUWizY",
+  domain: "www.chatbase.co"
+  }
+  </script>
 {% endblock %}
 
 {% block content %}
 {{ super() }}
-<div id="chat-container"></div>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    if (window.ChatComponent) {
-      ChatComponent.init('S55hKcH2nJgTuSZ2hYhc', '#chat-container');
-    } else {
-      console.error('ChatComponent is not available');
-    }
-  });
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="l76tlZUQmt8dY1_wUWizY"
+domain="www.chatbase.co"
+defer>
 </script>
 {% endblock %}
